@@ -17,7 +17,7 @@ export default function Home() {
         </div>
 
         <div className="w-[699px] h-[442px] border border-yellow-300 relative">
-          <Image src="/dashboard.png" alt="auto mail dashboard screen" fill loading="lazy" className="absolute" />
+          <Image src="/dashboard_alt.png" alt="auto mail dashboard screen" fill loading="lazy" className="absolute" />
         </div>
       </section>
       <section className="w-screen border border-[#343E61] bg-[#ffa498]">
@@ -86,7 +86,7 @@ export default function Home() {
           <h2 className="border border-blue-500 w-[719px] text-[#343E61] bold text-[34px] mb-4">AutoMail <span className="opacity-75 font-semibold">est une solution qui change la donne pour les opérations de </span>traitement du courrier<span className="opacity-75 font-semibold">, combinant </span>l'automatisation<span className="opacity-75 font-semibold">, </span>l'IA<span className="opacity-75 font-semibold"> et des </span>fonctions de sécurité<span className="opacity-75 font-semibold"> pour assurer un </span>traitement efficient<span className="opacity-75 font-semibold"> et </span>sécurisé<span className="opacity-75 font-semibold"> des lettres physiques.</span></h2>
           <p className="w-[575px] text-[#343E61] ">Grâce à sa suite complète d'outils, AutoMail ne se contente pas de rationaliser le processus, mais donne également aux organisations les moyens de gérer les communications avec agilité et précision.</p>
           <div className="w-full flex justify-center">
-            <Link href='/services' className=" flex justify-center items-center w-[191px] h-[49px] border-[3px] border-[#FF6854] text-[#FF6854] bg-primary bg-opacity-40 hover:bg-opacity-0 mt-[30px] font-semibold rounded-2xl hover:bg-[#FF6854]">En savoir plus</Link>
+            <Link href='/solutions' className=" flex justify-center items-center w-[191px] h-[49px] border-[3px] border-[#FF6854] text-[#FF6854] bg-primary bg-opacity-40 hover:bg-opacity-0 mt-[30px] font-semibold rounded-2xl hover:bg-[#FF6854]">En savoir plus</Link>
           </div>
         </div>
         <div className="w-1/3 border border-blue-600 relative">

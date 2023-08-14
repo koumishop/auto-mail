@@ -1,7 +1,6 @@
 'use client'
 
 import Image from 'next/image'
-import Card from '@/components/card'
 import { Disclosure } from '@headlessui/react'
 import { Icon } from "@iconify/react"
 
@@ -10,7 +9,7 @@ export default function Services() {
       <main className="flex min-h-screen flex-col items-center justify-between">
         <section className="w-screen flex flex-col items-center justify-center pt-24">
           <h1 className="w-[936px] text-[40px] text-[#343E61] text-center mb-8"><span className="opacity-75">Gerez le</span> traitement de vos courriers<span className="opacity-75"> de la manière la</span> plus optimale</h1>
-          <div className="w-[936px] h-[543px] border border-yellow-300 relative  shadow-lg">
+          <div className="w-[936px] h-[543px] relative  shadow-lg">
             <Image src="/mail.png" alt="auto mail dashboard screen" fill loading="lazy" className="absolute" />
           </div>        
         </section>
@@ -18,11 +17,11 @@ export default function Services() {
           <p className="w-[926px] my-14 text-[18px] text-[#343E61]">
             AutoMail est une solution innovante conçue pour révolutionner les opérations traditionnelles de traitement de courrier grâce à l'utilisation de technologies de pointe telles que l'intelligence artificielle (IA), la reconnaissance optique de caractères (OCR) et le traitement du langage naturel (NLP)
           </p>
-          <div className="w-screen flex flex-wrap px-12 border border-red-600 ">
+          <div className="w-screen flex flex-wrap px-12">
             <Disclosure>
               {
                 ({ open }) => (
-                  <div className={`${ open?'w-[48%]':"w-[18%]" } flex border border-blue-600 mr-4 mb-4`}>
+                  <div className={`${ open?'w-[48%]':"w-[18%]" } flex mr-4 mb-4`}>
                     <Disclosure.Button className={`flex w-[230px] justify-between items-center shadow-xl ${open ? 'rounded-s-lg' : 'rounded-lg'} bg-[#FF6854] px-4 py-2 text-left text-sm font-medium text-white hover:bg-[#FF6854D9] focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-75`}>
                       <div className="w-full flex flex-col items-center">
                         <Icon icon="solar:object-scan-bold-duotone" width={85} height={85} color="#FFFFFF" className="mt-10 mb-4"/>
@@ -30,7 +29,7 @@ export default function Services() {
                           Numérisation automatisée des lettres
                         </h3>
                       </div>
-                      <Icon icon="solar:alt-arrow-left-bold" width={24} height={24} color="#FFFFFF" className={`${open ? 'rotate-180 transform' : ''} h-5 w-5 text-white`}/>
+                      <Icon icon="solar:alt-arrow-right-bold" width={24} height={24} color="#FFFFFF" className={`${open ? 'rotate-180 transform' : ''} h-5 w-5 text-white`}/>
                     </Disclosure.Button>
                     <Disclosure.Panel className="border border-black bg-white rounded-e-lg px-4 pt-4 pb-2 text-gray-500">
                       <p className="text-sm">
@@ -47,7 +46,7 @@ export default function Services() {
             <Disclosure>
               {
                 ({ open }) => (
-                  <div className={`${ open ?'w-[48%]':"w-[18%]" } flex border border-blue-600 mr-4 mb-4`}>
+                  <div className={`${ open ?'w-[48%]':"w-[18%]" } flex mr-4 mb-4`}>
                     <Disclosure.Button className={`flex w-[230px] justify-between items-center shadow-xl ${open ? 'rounded-s-lg' : 'rounded-lg'} bg-[#3AC4E5] px-4 py-2 text-left text-sm font-medium text-white hover:bg-[#3AC4E5D9] focus:outline-none focus-visible:ring focus-visible:ring-[#3AC4E5] focus-visible:ring-opacity-75`}>
                       <div className="w-full flex flex-col items-center">
                         <Icon icon="solar:move-to-folder-bold-duotone" width={85} height={85} color="#FFFFFF" className="mt-10 mb-4"/>
@@ -55,7 +54,7 @@ export default function Services() {
                           Analyse et catégorisation assistées par l'IA
                         </h3>
                       </div>
-                      <Icon icon="solar:alt-arrow-left-bold" width={24} height={24} color="#FFFFFF" className={`${open ? 'rotate-180 transform' : ''} h-5 w-5 text-white`}/>
+                      <Icon icon="solar:alt-arrow-right-bold" width={24} height={24} color="#FFFFFF" className={`${open ? 'rotate-180 transform' : ''} h-5 w-5 text-white`}/>
                     </Disclosure.Button>
                     <Disclosure.Panel className="border border-black bg-white rounded-e-lg px-4 pt-4 pb-2 text-gray-500">
                       <p className="text-sm">
@@ -72,7 +71,7 @@ export default function Services() {
             <Disclosure>
               {
                 ({ open }) => (
-                  <div className={`${ open ?'w-[48%]':"w-[18%]" } flex border border-blue-600 mr-4 mb-4`}>
+                  <div className={`${ open ?'w-[48%]':"w-[18%]" } flex mr-4 mb-4`}>
                     <Disclosure.Button className={`flex w-[230px] justify-between items-center shadow-xl ${open ? 'rounded-s-lg' : 'rounded-lg'} bg-[#E4A951] px-4 py-2 text-left text-sm font-medium text-white hover:bg-[#E4A951D9] focus:outline-none focus-visible:ring focus-visible:ring-[#E4A951] focus-visible:ring-opacity-75`}>
                       <div className="w-full flex flex-col items-center">
                         <Icon icon="solar:dialog-2-bold-duotone" width={85} height={85} color="#FFFFFF" className="mt-10 mb-4"/>
@@ -80,7 +79,7 @@ export default function Services() {
                           Génération automatisée de réponses
                         </h3>
                       </div>
-                      <Icon icon="solar:alt-arrow-left-bold" width={24} height={24} color="#FFFFFF" className={`${open ? 'rotate-180 transform' : ''} h-5 w-5 text-white`}/>
+                      <Icon icon="solar:alt-arrow-right-bold" width={24} height={24} color="#FFFFFF" className={`${open ? 'rotate-180 transform' : ''} h-5 w-5 text-white`}/>
                     </Disclosure.Button>
                     <Disclosure.Panel className="border border-black bg-white rounded-e-lg px-4 pt-4 pb-2 text-gray-500">
                       <p className="text-sm">
@@ -97,7 +96,7 @@ export default function Services() {
             <Disclosure>
               {
                 ({ open }) => (
-                  <div className={`${ open ?'w-[48%]':"w-[18%]" } flex border border-blue-600 mr-4 mb-4`}>
+                  <div className={`${ open ?'w-[48%]':"w-[18%]" } flex mr-4 mb-4`}>
                     <Disclosure.Button className={`flex w-[230px] justify-between items-center shadow-xl ${open ? 'rounded-s-lg' : 'rounded-lg'} bg-[#343E61] px-4 py-2 text-left text-sm font-medium text-white hover:bg-[#343E61D9] focus:outline-none focus-visible:ring focus-visible:ring-[#343E61] focus-visible:ring-opacity-75`}>
                       <div className="w-full flex flex-col items-center">
                         <Icon icon="solar:pen-2-bold-duotone" width={85} height={85} color="#FFFFFF" className="mt-10 mb-4"/>
@@ -105,7 +104,7 @@ export default function Services() {
                           Ajout et envoi de signatures électroniques
                         </h3>
                       </div>
-                      <Icon icon="solar:alt-arrow-left-bold" width={24} height={24} color="#FFFFFF" className={`${open ? 'rotate-180 transform' : ''} h-5 w-5 text-white`}/>
+                      <Icon icon="solar:alt-arrow-right-bold" width={24} height={24} color="#FFFFFF" className={`${open ? 'rotate-180 transform' : ''} h-5 w-5 text-white`}/>
                     </Disclosure.Button>
                     <Disclosure.Panel className="border border-black bg-white rounded-e-lg px-4 pt-4 pb-2 text-gray-500">
                       <p className="text-sm">
@@ -122,7 +121,7 @@ export default function Services() {
             <Disclosure>
               {
                 ({ open }) => (
-                  <div className={`${ open ?'w-[48%]':"w-[18%]" } flex border border-blue-600 mr-4 mb-4`}>
+                  <div className={`${ open ?'w-[48%]':"w-[18%]" } flex mr-4 mb-4`}>
                     <Disclosure.Button className={`flex w-[230px] justify-between items-center shadow-xl ${open ? 'rounded-s-lg' : 'rounded-lg'} bg-[#646363] px-4 py-2 text-left text-sm font-medium text-white hover:bg-[#646363D9] focus:outline-none focus-visible:ring focus-visible:ring-[#646363] focus-visible:ring-opacity-75`}>
                       <div className="w-full flex flex-col items-center">
                         <Icon icon="solar:chart-2-bold-duotone" width={85} height={85} color="#FFFFFF" className="mt-10 mb-4"/>
@@ -130,7 +129,7 @@ export default function Services() {
                           Analyse des données et rapports
                         </h3>
                       </div>
-                      <Icon icon="solar:alt-arrow-left-bold" width={24} height={24} color="#FFFFFF" className={`${open ? 'rotate-180 transform' : ''} h-5 w-5 text-white`}/>
+                      <Icon icon="solar:alt-arrow-right-bold" width={24} height={24} color="#FFFFFF" className={`${open ? 'rotate-180 transform' : ''} h-5 w-5 text-white`}/>
                     </Disclosure.Button>
                     <Disclosure.Panel className="border border-black bg-white rounded-e-lg px-4 pt-4 pb-2 text-gray-500">
                       <p className="text-sm">
@@ -147,7 +146,7 @@ export default function Services() {
             <Disclosure>
               {
                 ({ open }) => (
-                  <div className={`${ open ?'w-[48%]':"w-[18%]" } flex border border-blue-600 mr-4 mb-4`}>
+                  <div className={`${ open ?'w-[48%]':"w-[18%]" } flex mr-4 mb-4`}>
                     <Disclosure.Button className={`flex w-[230px] justify-between items-center shadow-xl ${open ? 'rounded-s-lg' : 'rounded-lg'} bg-[#06AA03] px-4 py-2 text-left text-sm font-medium text-white hover:bg-[#06AA03D9] focus:outline-none focus-visible:ring focus-visible:ring-[#06AA03] focus-visible:ring-opacity-75`}>
                       <div className="w-full flex flex-col items-center">
                         <Icon icon="solar:lock-password-unlocked-bold-duotone" width={85} height={85} color="#FFFFFF" className="mt-10 mb-4"/>
@@ -155,7 +154,7 @@ export default function Services() {
                           Conformité et sécurité
                         </h3>
                       </div>
-                      <Icon icon="solar:alt-arrow-left-bold" width={24} height={24} color="#FFFFFF" className={`${open ? 'rotate-180 transform' : ''} h-5 w-5 text-white`}/>
+                      <Icon icon="solar:alt-arrow-right-bold" width={24} height={24} color="#FFFFFF" className={`${open ? 'rotate-180 transform' : ''} h-5 w-5 text-white`}/>
                     </Disclosure.Button>
                     <Disclosure.Panel className="border border-black bg-white rounded-e-lg px-4 pt-4 pb-2 text-gray-500">
                       <p className="text-sm">

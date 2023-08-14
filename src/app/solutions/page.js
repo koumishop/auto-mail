@@ -5,20 +5,20 @@ import { Icon } from "@iconify/react"
 export default function Solutions() {
     return (
       <main className="flex flex-col items-center justify-between pt-24 px-24">
-        <section className="w-screen flex justify-center space-x-4 pb-28 border border-black">
+        <section className="w-screen flex justify-center space-x-4 pb-28">
           <h1 className="w-[741px] text-[40px] text-[#343E61]">
             <span className="opacity-75">En réduisant la</span> charge de travail manuelle<span className="opacity-75">, en optimisant les</span> temps de réponse <span className="opacity-75">et en protégeant les</span> informations critiques<span className="opacity-75">, AutoMail est une</span> solution moderne <span className="opacity-75">pour les</span> défis modernes.
           </h1>
-          <div className="w-[437px] h-[444px] border border-blue-600 relative">
+          <div className="w-[437px] h-[444px] relative">
             <Image src="/charts.svg" alt="auto mail dashboard screen" fill loading="lazy" className="absolute" />
           </div>
         </section>
-        <section className="w-screen h-[526px] flex flex-col items-center border border-red-600 bg-[#ffa498]">
+        <section className="w-screen h-[526px] flex flex-col items-center bg-[#ffa498]">
           <h2 className="flex justify-center text-[34px] mt-24">Outils de gestion des courriers ajustable et adapté aux besoin du client</h2>
           <p className="w-[1236px]">
             Grâce à une assistance permanente et à des capacités de personnalisation, il constitue une solution évolutive qui peut s'adapter aux besoins croissants de n'importe quelle organisation.
           </p>
-          <div className="w-[1236px] border border-white flex items-start justify-between">
+          <div className="w-[1236px] flex items-start justify-between">
             <div className="flex flex-col items-center">
               <Icon icon="solar:headphones-square-sound-bold-duotone" width={85} height={85} color="#FFFFFF" className="mt-10 mb-4"/>
               <p className="w-[115px] text-sm text-[#343E61] text-center">

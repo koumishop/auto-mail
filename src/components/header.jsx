@@ -24,7 +24,7 @@ export default function Header() {
                     <Menu.Button>
                         <Icon icon="solar:hamburger-menu-line-duotone" width={45} height={45} color="#343E61" />
                     </Menu.Button>
-                    <Menu.Items className="w-1/2 flex flex-col space-y-2 bg-[#FFFFFF99] p-4 z-10">
+                    <Menu.Items className="w-1/2 flex flex-col space-y-2 bg-[#FFFFFFCC] p-4 z-10">
                         <Menu.Item>
                         {({ active }) => (
                             <Link href='/' className={`${active && 'hover:font-semibold'} `} >Accueil</Link>
@@ -53,13 +53,6 @@ export default function Header() {
                     </Menu.Items>
                 </Menu>
             </nav>
-
-            {/* <nav className="w-3/4 flex flex-col items-end mr-2 text-[#343E61] md:hidden border border-black">
-                <button>
-                    <Icon icon="solar:hamburger-menu-line-duotone" width={45} height={45} />
-                </button>
-
-            </nav> */}
         </header>           
     )
 }

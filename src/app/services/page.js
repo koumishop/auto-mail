@@ -6,22 +6,22 @@ import { Icon } from "@iconify/react"
 
 export default function Services() {
     return (
-      <main className="flex min-h-screen flex-col items-center justify-between">
-        <section className="w-screen flex flex-col items-center justify-center pt-24">
-          <h1 className="w-[936px] text-[40px] text-[#343E61] text-center mb-8"><span className="opacity-75">Gerez le</span> traitement de vos courriers<span className="opacity-75"> de la manière la</span> plus optimale</h1>
-          <div className="w-[936px] h-[543px] relative  shadow-lg">
+      <main className="flex min-h-screen flex-col items-center justify-between overflow-hidden">
+        <section className="w-screen flex flex-col items-center justify-center pt12 md:pt-24">
+          <h1 className="w-full md:w-[936px]  text-[22px] md:text-[40px] text-[#343E61] text-center mb-8"><span className="opacity-75">Gerez le</span> traitement de vos courriers<span className="opacity-75"> de la manière la</span> plus optimale</h1>
+          <div className="w-[536px] h-[243px] md:w-[936px] md:h-[543px] relative  shadow-lg">
             <Image src="/mail.png" alt="auto mail dashboard screen" fill loading="lazy" className="absolute" />
           </div>        
         </section>
         <section className="w-screen flex flex-col items-center justify-center mt-[-150px] pt-[150px] pb-10 bg-[#F5F5F5]">
-          <p className="w-[926px] my-14 text-[18px] text-[#343E61]">
+          <p className="md:w-[926px] my-7 mx-5 md:mx-0 md:my-14 text-[18px] text-[#343E61]">
             AutoMail est une solution innovante conçue pour révolutionner les opérations traditionnelles de traitement de courrier grâce à l'utilisation de technologies de pointe telles que l'intelligence artificielle (IA), la reconnaissance optique de caractères (OCR) et le traitement du langage naturel (NLP)
           </p>
-          <div className="w-screen flex flex-wrap px-12">
+          <div className="w-screen md:flex md:flex-wrap px-6 md:px-12">
             <Disclosure>
               {
                 ({ open }) => (
-                  <div className={`${ open?'w-[48%]':"w-[18%]" } flex mr-4 mb-4`}>
+                  <div className={`${ open?'w-[100%]  md:w-[48%]':"w-[48%] md:w-[18%]" } flex mr-4 mb-4`}>
                     <Disclosure.Button className={`flex w-[230px] justify-between items-center shadow-xl ${open ? 'rounded-s-lg' : 'rounded-lg'} bg-[#FF6854] px-4 py-2 text-left text-sm font-medium text-white hover:bg-[#FF6854D9] focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-75`}>
                       <div className="w-full flex flex-col items-center">
                         <Icon icon="solar:object-scan-bold-duotone" width={85} height={85} color="#FFFFFF" className="mt-10 mb-4"/>
@@ -31,7 +31,7 @@ export default function Services() {
                       </div>
                       <Icon icon="solar:alt-arrow-right-bold" width={24} height={24} color="#FFFFFF" className={`${open ? 'rotate-180 transform' : ''} h-5 w-5 text-white`}/>
                     </Disclosure.Button>
-                    <Disclosure.Panel className="border border-black bg-white rounded-e-lg px-4 pt-4 pb-2 text-gray-500">
+                    <Disclosure.Panel className="border border-black bg-white rounded-e-lg px-4 pt-4 pb-2 text-gray-500 ">
                       <p className="text-sm">
                         AutoMail utilise des scanners à grande vitesse pour numériser rapidement les lettres physiques entrantes. La technologie OCR convertit ces images numérisées en texte lisible par machine tout en préservant le formatage et la mise en page d'origine.
                       </p>
@@ -46,7 +46,7 @@ export default function Services() {
             <Disclosure>
               {
                 ({ open }) => (
-                  <div className={`${ open ?'w-[48%]':"w-[18%]" } flex mr-4 mb-4`}>
+                  <div className={`${ open ?'w-[100%]  md:w-[48%]':"w-[48%] md:w-[18%]" } flex mr-4 mb-4`}>
                     <Disclosure.Button className={`flex w-[230px] justify-between items-center shadow-xl ${open ? 'rounded-s-lg' : 'rounded-lg'} bg-[#3AC4E5] px-4 py-2 text-left text-sm font-medium text-white hover:bg-[#3AC4E5D9] focus:outline-none focus-visible:ring focus-visible:ring-[#3AC4E5] focus-visible:ring-opacity-75`}>
                       <div className="w-full flex flex-col items-center">
                         <Icon icon="solar:move-to-folder-bold-duotone" width={85} height={85} color="#FFFFFF" className="mt-10 mb-4"/>
@@ -71,7 +71,7 @@ export default function Services() {
             <Disclosure>
               {
                 ({ open }) => (
-                  <div className={`${ open ?'w-[48%]':"w-[18%]" } flex mr-4 mb-4`}>
+                  <div className={`${ open ?'w-[100%]  md:w-[48%]':"w-[48%] md:w-[18%]"} flex mr-4 mb-4`}>
                     <Disclosure.Button className={`flex w-[230px] justify-between items-center shadow-xl ${open ? 'rounded-s-lg' : 'rounded-lg'} bg-[#E4A951] px-4 py-2 text-left text-sm font-medium text-white hover:bg-[#E4A951D9] focus:outline-none focus-visible:ring focus-visible:ring-[#E4A951] focus-visible:ring-opacity-75`}>
                       <div className="w-full flex flex-col items-center">
                         <Icon icon="solar:dialog-2-bold-duotone" width={85} height={85} color="#FFFFFF" className="mt-10 mb-4"/>
@@ -96,7 +96,7 @@ export default function Services() {
             <Disclosure>
               {
                 ({ open }) => (
-                  <div className={`${ open ?'w-[48%]':"w-[18%]" } flex mr-4 mb-4`}>
+                  <div className={`${ open ?'w-[100%]  md:w-[48%]':"w-[48%] md:w-[18%]"} flex mr-4 mb-4`}>
                     <Disclosure.Button className={`flex w-[230px] justify-between items-center shadow-xl ${open ? 'rounded-s-lg' : 'rounded-lg'} bg-[#343E61] px-4 py-2 text-left text-sm font-medium text-white hover:bg-[#343E61D9] focus:outline-none focus-visible:ring focus-visible:ring-[#343E61] focus-visible:ring-opacity-75`}>
                       <div className="w-full flex flex-col items-center">
                         <Icon icon="solar:pen-2-bold-duotone" width={85} height={85} color="#FFFFFF" className="mt-10 mb-4"/>
@@ -121,7 +121,7 @@ export default function Services() {
             <Disclosure>
               {
                 ({ open }) => (
-                  <div className={`${ open ?'w-[48%]':"w-[18%]" } flex mr-4 mb-4`}>
+                  <div className={`${ open ?'w-[100%]  md:w-[48%]':"w-[48%] md:w-[18%]" } flex mr-4 mb-4`}>
                     <Disclosure.Button className={`flex w-[230px] justify-between items-center shadow-xl ${open ? 'rounded-s-lg' : 'rounded-lg'} bg-[#646363] px-4 py-2 text-left text-sm font-medium text-white hover:bg-[#646363D9] focus:outline-none focus-visible:ring focus-visible:ring-[#646363] focus-visible:ring-opacity-75`}>
                       <div className="w-full flex flex-col items-center">
                         <Icon icon="solar:chart-2-bold-duotone" width={85} height={85} color="#FFFFFF" className="mt-10 mb-4"/>
@@ -146,7 +146,7 @@ export default function Services() {
             <Disclosure>
               {
                 ({ open }) => (
-                  <div className={`${ open ?'w-[48%]':"w-[18%]" } flex mr-4 mb-4`}>
+                  <div className={`${ open ?'w-[100%]  md:w-[48%]':"w-[48%] md:w-[18%]"} flex mr-4 mb-4`}>
                     <Disclosure.Button className={`flex w-[230px] justify-between items-center shadow-xl ${open ? 'rounded-s-lg' : 'rounded-lg'} bg-[#06AA03] px-4 py-2 text-left text-sm font-medium text-white hover:bg-[#06AA03D9] focus:outline-none focus-visible:ring focus-visible:ring-[#06AA03] focus-visible:ring-opacity-75`}>
                       <div className="w-full flex flex-col items-center">
                         <Icon icon="solar:lock-password-unlocked-bold-duotone" width={85} height={85} color="#FFFFFF" className="mt-10 mb-4"/>

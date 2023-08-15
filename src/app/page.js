@@ -7,16 +7,15 @@ import Card from '@/components/card'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center">
-      <section className="w-screen h-[560px] flex mt-[40px] mb-[60px] pt-24">
-        <div className=" pl-[120px]">
-          <h1 className="w-[619px] text-[40px] text-[#343E61]"><span className="opacity-75">Révolutionnez les opérations de</span> traitement de courrier <span className="opacity-75 font-semibold">grâce à l'automatisation pilotée par l'</span>Intelligence Artificielle</h1>
-          <p className="w-[575px] mt-4 text-[18px] text-[#343E61]">
+    <main className="flex min-h-screen flex-col items-center overflow-hidden">
+      <section className="w-screen md:h-[560px] md:flex md:mt-[40px] md:mb-[60px] md:pt-24">
+        <div className="pl-5 md:pl-[120px]">
+          <h1 className="text-2xl md:w-[619px] md:text-[40px] text-[#343E61]"><span className="opacity-75">Révolutionnez les opérations de</span> traitement de courrier <span className="opacity-75 font-semibold">grâce à l'automatisation pilotée par l'</span>Intelligence Artificielle</h1>
+          <p className="px-2 md:w-[575px] my-4 md:mt-4 md:px-0 md:text-[18px] text-[#343E61]">
             Le système automatise la numérisation des lettres physiques entrantes, extrait et analyse les informations pertinentes, génère et distribue des réponses, et assure la conformité et la sécurité tout au long du processus.            
           </p>
         </div>
-
-        <div className="w-[699px] h-[442px] relative">
+        <div className="w-[599px] h-[342px] md:w-[699px] md:h-[442px] relative">
           <Image src="/dashboard_alt.png" alt="auto mail dashboard screen" fill loading="lazy" className="absolute" />
         </div>
       </section>

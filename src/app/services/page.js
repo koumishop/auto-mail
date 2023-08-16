@@ -122,7 +122,7 @@ export default function Services() {
               {
                 ({ open }) => (
                   <div className={`${ open ?'w-[100%]  md:w-[48%]':"w-[48%] md:w-[18%]" } flex mr-4 mb-4`}>
-                    <Disclosure.Button className={`flex w-[230px] justify-between items-center shadow-xl ${open ? 'rounded-s-lg' : 'rounded-lg'} bg-[#646363] px-4 py-2 text-left text-sm font-medium text-white hover:bg-[#646363D9] focus:outline-none focus-visible:ring focus-visible:ring-[#646363] focus-visible:ring-opacity-75`}>
+                    <Disclosure.Button className={`flex w-[230px] justify-between items-center shadow-xl ${open ? 'rounded-s-lg' : 'rounded-lg'} bg-[#3AC4E5] px-4 py-2 text-left text-sm font-medium text-white hover:bg-[#3AC4E5D9] focus:outline-none focus-visible:ring focus-visible:ring-[#3AC4E5] focus-visible:ring-opacity-75`}>
                       <div className="w-full flex flex-col items-center">
                         <Icon icon="solar:chart-2-bold-duotone" width={85} height={85} color="#FFFFFF" className="mt-10 mb-4"/>
                         <h3 className="text-[#FFFFFF] w-[160px] mb-8 text-lg font-bold">
@@ -147,7 +147,7 @@ export default function Services() {
               {
                 ({ open }) => (
                   <div className={`${ open ?'w-[100%]  md:w-[48%]':"w-[48%] md:w-[18%]"} flex mr-4 mb-4`}>
-                    <Disclosure.Button className={`flex w-[230px] justify-between items-center shadow-xl ${open ? 'rounded-s-lg' : 'rounded-lg'} bg-[#06AA03] px-4 py-2 text-left text-sm font-medium text-white hover:bg-[#06AA03D9] focus:outline-none focus-visible:ring focus-visible:ring-[#06AA03] focus-visible:ring-opacity-75`}>
+                    <Disclosure.Button className={`flex w-[230px] justify-between items-center shadow-xl ${open ? 'rounded-s-lg' : 'rounded-lg'} bg-[#FF6854] px-4 py-2 text-left text-sm font-medium text-white hover:bg-[#FF6854D9] focus:outline-none focus-visible:ring focus-visible:ring-[#FF6854] focus-visible:ring-opacity-75`}>
                       <div className="w-full flex flex-col items-center">
                         <Icon icon="solar:lock-password-unlocked-bold-duotone" width={85} height={85} color="#FFFFFF" className="mt-10 mb-4"/>
                         <h3 className="text-[#FFFFFF] w-[160px] mb-8 text-lg font-bold">

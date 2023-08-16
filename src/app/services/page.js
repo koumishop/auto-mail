@@ -10,7 +10,7 @@ export default function Services() {
         <section className="w-screen flex flex-col items-center justify-center pt12 md:pt-24">
           <h1 className="w-full md:w-[936px]  text-[22px] md:text-[40px] text-[#343E61] text-center mb-8"><span className="opacity-75">Gerez le</span> traitement de vos courriers<span className="opacity-75"> de la manière la</span> plus optimale</h1>
           <div className="w-[536px] h-[243px] md:w-[936px] md:h-[543px] relative  shadow-lg">
-            <Image src="/mail.png" alt="auto mail dashboard screen" fill loading="lazy" className="absolute" />
+            <Image src="/mail.png" alt="auto mail dashboard screen" className="absolute" />
           </div>        
         </section>
         <section className="w-screen flex flex-col items-center justify-center mt-[-150px] pt-[150px] pb-10 bg-[#F5F5F5]">

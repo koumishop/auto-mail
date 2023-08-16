@@ -10,7 +10,7 @@ export default function Solutions() {
             <span className="opacity-75">En réduisant la</span> charge de travail manuelle<span className="opacity-75">, en optimisant les</span> temps de réponse <span className="opacity-75">et en protégeant les</span> informations critiques<span className="opacity-75">, AutoMail est une</span> solution moderne <span className="opacity-75">pour les</span> défis modernes.
           </h1>
           <div className="w-[337px] h-[344px] md:w-[437px] md:h-[444px] relative">
-            <Image src="/charts.svg" alt="auto mail dashboard screen" fill loading="lazy" className="absolute" />
+            <Image src="/charts.svg" alt="auto mail dashboard screen" fill className="absolute" />
           </div>
         </section>
         <section className="w-screen md:h-[526px] flex flex-col items-center bg-[#ffa498]">

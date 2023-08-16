@@ -16,7 +16,7 @@ export default function Home() {
           </p>
         </div>
         <div className="w-[599px] h-[342px] md:w-[699px] md:h-[442px] relative">
-          <Image src="/dashboard_alt.png" alt="auto mail dashboard screen" fill loading="lazy" className="absolute" />
+          <Image src="/dashboard_alt.png" alt="auto mail dashboard screen" fill className="absolute" />
         </div>
       </section>
       <section className="w-screen bg-[#ffa498]">
@@ -24,7 +24,7 @@ export default function Home() {
         <div className="w-screen md:flex">
           <div className="md:w-1/2">
             <div className="w-[662px] h-[340px] md:w-[762px] md:h-[440px]  relative">
-              <Image src="/mailbox.png" alt="auto mail dashboard screen" fill loading="lazy" className="absolute" />
+              <Image src="/mailbox.png" alt="auto mail dashboard screen" fill className="absolute" />
             </div>
             <div className="w-[762px] h-12 pl-[120px] gradientBg">
             </div>
@@ -90,7 +90,7 @@ export default function Home() {
           </div>
         </div>
         <div className="w-1/3 relative">
-          <Image src="/charts.svg" alt="auto mail dashboard screen" fill loading="lazy" className="absolute" />
+          <Image src="/charts.svg" alt="auto mail dashboard screen" fill className="absolute" />
         </div>
       </section>
     </main>

@@ -10,7 +10,7 @@ export default function Services() {
         <section className="w-screen flex flex-col items-center justify-center pt12 md:pt-24">
           <h1 className="w-full md:w-[936px]  text-[22px] md:text-[40px] text-[#343E61] text-center mb-8"><span className="opacity-75">Gerez le</span> traitement de vos courriers<span className="opacity-75"> de la manière la</span> plus optimale</h1>
           <div className="w-[536px] h-[243px] md:w-[936px] md:h-[543px] relative  shadow-lg">
-            <Image src="/mail.png" alt="auto mail dashboard screen" className="absolute" />
+            <Image src="/mail.png" alt="auto mail dashboard screen" fill className="absolute" />
           </div>        
         </section>
         <section className="w-screen flex flex-col items-center justify-center mt-[-150px] pt-[150px] pb-10 bg-[#F5F5F5]">
@@ -21,7 +21,7 @@ export default function Services() {
             <Disclosure>
               {
                 ({ open }) => (
-                  <div className={`${ open?'w-[100%]  md:w-[48%]':"w-[48%] md:w-[18%]" } flex mr-4 mb-4`}>
+                  <div className={`${ open?'w-[100%]  md:w-[48%]':"w-[48%] md:w-[18%]" } flex mr-4 mb-4 hover:scale-110`}>
                     <Disclosure.Button className={`flex w-[230px] justify-between items-center shadow-xl ${open ? 'rounded-s-lg' : 'rounded-lg'} bg-[#FF6854] px-4 py-2 text-left text-sm font-medium text-white hover:bg-[#FF6854D9] focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-75`}>
                       <div className="w-full flex flex-col items-center">
                         <Icon icon="solar:object-scan-bold-duotone" width={85} height={85} color="#FFFFFF" className="mt-10 mb-4"/>
@@ -46,7 +46,7 @@ export default function Services() {
             <Disclosure>
               {
                 ({ open }) => (
-                  <div className={`${ open ?'w-[100%]  md:w-[48%]':"w-[48%] md:w-[18%]" } flex mr-4 mb-4`}>
+                  <div className={`${ open ?'w-[100%]  md:w-[48%]':"w-[48%] md:w-[18%]" } flex mr-4 mb-4 hover:scale-110`}>
                     <Disclosure.Button className={`flex w-[230px] justify-between items-center shadow-xl ${open ? 'rounded-s-lg' : 'rounded-lg'} bg-[#3AC4E5] px-4 py-2 text-left text-sm font-medium text-white hover:bg-[#3AC4E5D9] focus:outline-none focus-visible:ring focus-visible:ring-[#3AC4E5] focus-visible:ring-opacity-75`}>
                       <div className="w-full flex flex-col items-center">
                         <Icon icon="solar:move-to-folder-bold-duotone" width={85} height={85} color="#FFFFFF" className="mt-10 mb-4"/>
@@ -71,7 +71,7 @@ export default function Services() {
             <Disclosure>
               {
                 ({ open }) => (
-                  <div className={`${ open ?'w-[100%]  md:w-[48%]':"w-[48%] md:w-[18%]"} flex mr-4 mb-4`}>
+                  <div className={`${ open ?'w-[100%]  md:w-[48%]':"w-[48%] md:w-[18%]"} flex mr-4 mb-4 hover:scale-110`}>
                     <Disclosure.Button className={`flex w-[230px] justify-between items-center shadow-xl ${open ? 'rounded-s-lg' : 'rounded-lg'} bg-[#E4A951] px-4 py-2 text-left text-sm font-medium text-white hover:bg-[#E4A951D9] focus:outline-none focus-visible:ring focus-visible:ring-[#E4A951] focus-visible:ring-opacity-75`}>
                       <div className="w-full flex flex-col items-center">
                         <Icon icon="solar:dialog-2-bold-duotone" width={85} height={85} color="#FFFFFF" className="mt-10 mb-4"/>
@@ -96,7 +96,7 @@ export default function Services() {
             <Disclosure>
               {
                 ({ open }) => (
-                  <div className={`${ open ?'w-[100%]  md:w-[48%]':"w-[48%] md:w-[18%]"} flex mr-4 mb-4`}>
+                  <div className={`${ open ?'w-[100%]  md:w-[48%]':"w-[48%] md:w-[18%]"} flex mr-4 mb-4 hover:scale-110`}>
                     <Disclosure.Button className={`flex w-[230px] justify-between items-center shadow-xl ${open ? 'rounded-s-lg' : 'rounded-lg'} bg-[#343E61] px-4 py-2 text-left text-sm font-medium text-white hover:bg-[#343E61D9] focus:outline-none focus-visible:ring focus-visible:ring-[#343E61] focus-visible:ring-opacity-75`}>
                       <div className="w-full flex flex-col items-center">
                         <Icon icon="solar:pen-2-bold-duotone" width={85} height={85} color="#FFFFFF" className="mt-10 mb-4"/>
@@ -121,7 +121,7 @@ export default function Services() {
             <Disclosure>
               {
                 ({ open }) => (
-                  <div className={`${ open ?'w-[100%]  md:w-[48%]':"w-[48%] md:w-[18%]" } flex mr-4 mb-4`}>
+                  <div className={`${ open ?'w-[100%]  md:w-[48%]':"w-[48%] md:w-[18%]" } flex mr-4 mb-4 hover:scale-110`}>
                     <Disclosure.Button className={`flex w-[230px] justify-between items-center shadow-xl ${open ? 'rounded-s-lg' : 'rounded-lg'} bg-[#3AC4E5] px-4 py-2 text-left text-sm font-medium text-white hover:bg-[#3AC4E5D9] focus:outline-none focus-visible:ring focus-visible:ring-[#3AC4E5] focus-visible:ring-opacity-75`}>
                       <div className="w-full flex flex-col items-center">
                         <Icon icon="solar:chart-2-bold-duotone" width={85} height={85} color="#FFFFFF" className="mt-10 mb-4"/>
@@ -146,7 +146,7 @@ export default function Services() {
             <Disclosure>
               {
                 ({ open }) => (
-                  <div className={`${ open ?'w-[100%]  md:w-[48%]':"w-[48%] md:w-[18%]"} flex mr-4 mb-4`}>
+                  <div className={`${ open ?'w-[100%]  md:w-[48%]':"w-[48%] md:w-[18%]"} flex mr-4 mb-4 hover:scale-110`}>
                     <Disclosure.Button className={`flex w-[230px] justify-between items-center shadow-xl ${open ? 'rounded-s-lg' : 'rounded-lg'} bg-[#FF6854] px-4 py-2 text-left text-sm font-medium text-white hover:bg-[#FF6854D9] focus:outline-none focus-visible:ring focus-visible:ring-[#FF6854] focus-visible:ring-opacity-75`}>
                       <div className="w-full flex flex-col items-center">
                         <Icon icon="solar:lock-password-unlocked-bold-duotone" width={85} height={85} color="#FFFFFF" className="mt-10 mb-4"/>

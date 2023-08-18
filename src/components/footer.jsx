@@ -52,7 +52,7 @@ export default function Footer() {
                     />
                 </span>
             </div>
-            {/* <button type="submit" disabled={state.submitting} className="w-[191px] h-[49px] border-[3px] border-[#E4A951] text-white bg-primary bg-opacity-40 hover:bg-opacity-0 mt-[30px] font-semibold rounded-2xl hover:bg-[#E4A951]">Envoyer</button> */}
+
             <Button borderColor="#E4A951" type="submit" disabled={state.submitting} >Envoyer</Button>
 
         </form>        

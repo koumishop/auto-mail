@@ -1,8 +1,7 @@
 'use client'
 
-import Lottie from 'react-lottie'
+import Lottie from 'lottie-react'
 import Image from 'next/image'
-import { Icon } from "@iconify/react"
 import Link from 'next/link'
 import Card from '@/components/card'
 import document from '../../public/alt_document.json'
@@ -18,94 +17,6 @@ import alt_security from '../../public/gradient_security.json'
 import code from '../../public/gradient_code.json'
 
 export default function Home() {
-  const documentOptions = {
-    loop: true,
-    autoplay: true,
-    animationData:document, 
-    rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice'
-    }
-  }
-  const folderOptions = {
-    loop: true,
-    autoplay: true,
-    animationData:folder, 
-    rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice'
-    }
-  }
-  const arrowOptions = {
-    loop: true,
-    autoplay: true,
-    animationData:arrow, 
-    rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice'
-    }
-  }
-  const signatureOptions = {
-    loop: true,
-    autoplay: true,
-    animationData:signature, 
-    rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice'
-    }
-  }
-  const chartOptions = {
-    loop: true,
-    autoplay: true,
-    animationData:chart, 
-    rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice'
-    }
-  }
-  const securityOptions = {
-    loop: true,
-    autoplay: true,
-    animationData:security, 
-    rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice'
-    }
-  }
-  const efficiencyOptions = {
-    loop: true,
-    autoplay: true,
-    animationData:alt_chart, 
-    rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice'
-    }
-  }
-  const targetOptions = {
-    loop: true,
-    autoplay: true,
-    animationData:target, 
-    rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice'
-    }
-  }
-  const trackOptions = {
-    loop: true,
-    autoplay: true,
-    animationData:track, 
-    rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice'
-    }
-  }
-  const altSecurityOptions = {
-    loop: true,
-    autoplay: true,
-    animationData:alt_security, 
-    rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice'
-    }
-  }
-  const codeOptions = {
-    loop: true,
-    autoplay: true,
-    animationData:code, 
-    rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice'
-    }
-  }
 
   return (
     <main className="flex min-h-screen flex-col items-center overflow-hidden">
@@ -132,12 +43,12 @@ export default function Home() {
           </div>
           <div className="md:w-1/2 flex flex-col justify-start">
             <div className="md:w-full flex flex-wrap justify-end py-[5px] md:py-0 md:px-[5px] md:pb-5">
-              <Card title="Numérisation automatisée des lettres" defaultOptions={documentOptions} />
-              <Card title="Analyse et catégorisation assistées par l'IA" defaultOptions={folderOptions} />
-              <Card title="Génération automatisée de réponses" defaultOptions={arrowOptions} />
-              <Card title="Ajout et envoi de signatures électroniques" defaultOptions={signatureOptions} />
-              <Card title="Analyse des données et rapports" defaultOptions={chartOptions} />
-              <Card title="Conformité et sécurité" defaultOptions={securityOptions} />
+              <Card title="Numérisation automatisée des lettres" animationData={document} />
+              <Card title="Analyse et catégorisation assistées par l'IA" animationData={folder} />
+              <Card title="Génération automatisée de réponses" animationData={arrow} />
+              <Card title="Ajout et envoi de signatures électroniques" animationData={signature} />
+              <Card title="Analyse des données et rapports" animationData={chart} />
+              <Card title="Conformité et sécurité" animationData={security} />
             </div>  
             <div className="w-full flex justify-center pb-10">
               <Link href='/services' className=" flex justify-center items-center w-[324px] h-[49px] border-[3px] border-[#FFF] text-[#FFF] bg-primary bg-opacity-40 mb-[30px] font-semibold rounded-2xl hover:bg-opacity-80 hover:bg-[#FFF] hover:text-[#ffa498]">Voir toutes les fonctionnalités</Link>
@@ -150,28 +61,36 @@ export default function Home() {
         <div className="w-screen px-6 flex justify-center">
           <div className="w-1/4 flex flex-col items-start">
             <div className="flex flex-col items-center mt-5 mb-2">
-                <Lottie options={efficiencyOptions} height={128} width={128} />
+              <div className="w-[128px] h-[128px]">
+                <Lottie animationData={alt_chart} loop={true} />
+              </div>
                 <h3 className="text-white text-3xl font-normal">Efficacité</h3>
             </div>
             <p className="text-[#767676] text-lg">Automatisation des opérations de tâches manuelles dans la salle des courriers</p>
           </div>
           <div className="w-1/4 flex flex-col items-start">
             <div className="flex flex-col items-center mt-5 mb-2">
-                <Lottie options={targetOptions} height={128} width={128} />
-                <h3 className="text-white text-3xl font-normal">Précision</h3>
+              <div className="w-[128px] h-[128px]">
+                <Lottie animationData={target} loop={true} height={128} width={128} />
+              </div>
+              <h3 className="text-white text-3xl font-normal">Précision</h3>
             </div>
             <p className="text-[#767676] text-lg">Génération automatisée de vos reponses grâce à l’IA</p>
           </div>
           <div className="w-1/4 flex flex-col items-start">
             <div className="flex flex-col items-center mt-5 mb-2">
-                <Lottie options={trackOptions} height={128} width={128} />
+              <div className="w-[128px] h-[128px]">
+                <Lottie animationData={track} loop={true} height={128} width={128} />
+              </div>
                 <h3 className="text-white text-3xl font-normal">Traçabilité</h3>
             </div>
             <p className="text-[#767676] text-lg">Chaques éléments de vos courriers sont comptabilisés</p>
           </div>
           <div className="w-1/4 flex flex-col items-start">
             <div className="flex flex-col items-center mt-5 mb-2">
-                <Lottie options={altSecurityOptions} height={128} width={128} />
+              <div className="w-[128px] h-[128px]">
+                <Lottie animationData={alt_security} loop={true} height={128} width={128} />
+              </div>
                 <h3 className="text-white text-3xl font-normal">Sécurité</h3>
             </div>
             <p className="text-[#767676] text-lg">Garantie de confidentialité et d’intégrité des données sensibles</p>
@@ -191,7 +110,7 @@ export default function Home() {
               </div>
             </div>
             <div className="w-[30%]">
-              <Lottie options={codeOptions} height={400} width={400} />
+              <Lottie animationData={code} loop={true} />
             </div>
           </div>
         </div>

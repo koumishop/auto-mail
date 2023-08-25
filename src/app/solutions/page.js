@@ -1,6 +1,6 @@
 'use client'
 import Image from 'next/image'
-import Lottie from 'react-lottie'
+import Lottie from 'lottie-react'
 import demand from "../../../public/demand.json"
 import document from "../../../public/document.json"
 import cli from "../../../public/cli.json"
@@ -9,54 +9,6 @@ import ressources from "../../../public/ressources.json"
 import trolley from "../../../public/trolley.json"
 
 export default function Solutions() {
-  const demandOptions = {
-    loop: true,
-    autoplay: true,
-    animationData:demand, 
-    rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice'
-    }
-  }
-  const documentOptions = {
-    loop: true,
-    autoplay: true,
-    animationData:document, 
-    rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice'
-    }
-  }
-  const cliOptions = {
-    loop: true,
-    autoplay: true,
-    animationData:cli, 
-    rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice'
-    }
-  }
-  const layerOptions = {
-    loop: true,
-    autoplay: true,
-    animationData:layers, 
-    rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice'
-    }
-  }
-  const ressourceOptions = {
-    loop: true,
-    autoplay: true,
-    animationData:ressources, 
-    rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice'
-    }
-  }
-  const trolleyOptions = {
-    loop: true,
-    autoplay: true,
-    animationData:trolley, 
-    rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice'
-    }
-  }
 
     return (
       <main className="flex flex-col items-center justify-between pt-12 px-12 md:pt-24 md:px-24 overflow-hidden">
@@ -75,8 +27,8 @@ export default function Solutions() {
           </p>
           <div className="md:w-[1236px] flex flex-col md:flex-row items-start justify-between">
             <div className="flex flex-col items-center">
-              <div className="mt-10 mb-4">
-                <Lottie options={demandOptions} height={85} width={85} />
+              <div className="w-[85px] h-[85px] mt-10 mb-4">
+                <Lottie options={demand} loop={true} />
               </div>
               <p className="w-[115px] text-sm text-[#FFFFFF] text-center">
                 Contactez notre <strong className="font-semibold">assistance</strong> pour discuter de vos particularités
@@ -86,8 +38,8 @@ export default function Solutions() {
               <path d="M45.7678 20.7678C46.7441 19.7915 46.7441 18.2085 45.7678 17.2322L29.8579 1.32233C28.8816 0.34602 27.2986 0.34602 26.3223 1.32233C25.346 2.29864 25.346 3.88155 26.3223 4.85786L40.4645 19L26.3223 33.1421C25.346 34.1184 25.346 35.7014 26.3223 36.6777C27.2986 37.654 28.8816 37.654 29.8579 36.6777L45.7678 20.7678ZM0 21.5H44V16.5H0V21.5Z" fill="#FFFFFF" fill-opacity="0.75"/>
             </svg>
             <div className="flex flex-col items-center">
-              <div className="mt-10 mb-4">
-                <Lottie options={documentOptions} height={85} width={85} />
+              <div className="w-[85px] h-[85px] mt-10 mb-4">
+                <Lottie animationData={document} loop={true} />
               </div>
               <p className="w-[115px] text-sm text-[#FFFFFF] text-center">
                 Etablissez les <strong className="font-semibold">particularités</strong> de votre système
@@ -97,8 +49,8 @@ export default function Solutions() {
               <path d="M45.7678 20.7678C46.7441 19.7915 46.7441 18.2085 45.7678 17.2322L29.8579 1.32233C28.8816 0.34602 27.2986 0.34602 26.3223 1.32233C25.346 2.29864 25.346 3.88155 26.3223 4.85786L40.4645 19L26.3223 33.1421C25.346 34.1184 25.346 35.7014 26.3223 36.6777C27.2986 37.654 28.8816 37.654 29.8579 36.6777L45.7678 20.7678ZM0 21.5H44V16.5H0V21.5Z" fill="#FFFFFF" fill-opacity="0.75"/>
             </svg>            
             <div className="flex flex-col items-center">
-              <div className="mt-10 mb-4">
-                <Lottie options={layerOptions} height={85} width={85} />
+              <div className="w-[85px] h-[85px] mt-10 mb-4">
+                <Lottie animationData={layers} loop={true} />
               </div>
               <p className="w-[115px] text-sm text-[#FFFFFF] text-center">
                 Nous dressons un <strong className="font-semibold">cahier de charge</strong> relatif à vos besoins
@@ -108,8 +60,8 @@ export default function Solutions() {
               <path d="M45.7678 20.7678C46.7441 19.7915 46.7441 18.2085 45.7678 17.2322L29.8579 1.32233C28.8816 0.34602 27.2986 0.34602 26.3223 1.32233C25.346 2.29864 25.346 3.88155 26.3223 4.85786L40.4645 19L26.3223 33.1421C25.346 34.1184 25.346 35.7014 26.3223 36.6777C27.2986 37.654 28.8816 37.654 29.8579 36.6777L45.7678 20.7678ZM0 21.5H44V16.5H0V21.5Z" fill="#FFFFFF" fill-opacity="0.75"/>
             </svg>            
             <div className="flex flex-col items-center">
-              <div className="mt-10 mb-4">
-                <Lottie options={cliOptions} height={85} width={85} />
+              <div className="w-[85px] h-[85px] mt-10 mb-4">
+                <Lottie animationData={cli} loop={true} />
               </div>
               <p className="w-[115px] text-sm text-[#FFFFFF] text-center">
                 Nous adaptons vos besoins en une <strong className="font-semibold">version personnalisée</strong>
@@ -119,8 +71,8 @@ export default function Solutions() {
               <path d="M45.7678 20.7678C46.7441 19.7915 46.7441 18.2085 45.7678 17.2322L29.8579 1.32233C28.8816 0.34602 27.2986 0.34602 26.3223 1.32233C25.346 2.29864 25.346 3.88155 26.3223 4.85786L40.4645 19L26.3223 33.1421C25.346 34.1184 25.346 35.7014 26.3223 36.6777C27.2986 37.654 28.8816 37.654 29.8579 36.6777L45.7678 20.7678ZM0 21.5H44V16.5H0V21.5Z" fill="#FFFFFF" fill-opacity="0.75"/>
             </svg>            
             <div className="flex flex-col items-center">
-              <div className="mt-10 mb-4">
-                <Lottie options={trolleyOptions} height={85} width={85} />
+              <div className="w-[85px] h-[85px] mt-10 mb-4">
+                <Lottie animationData={trolley} loop={true} />
               </div>
               <p className="w-[115px] text-sm text-[#FFFFFF] text-center">
                 Nous <strong className="font-semibold">livrons</strong> et <strong className="font-semibold">installons</strong> votre version personnalisée
@@ -130,8 +82,8 @@ export default function Solutions() {
               <path d="M45.7678 20.7678C46.7441 19.7915 46.7441 18.2085 45.7678 17.2322L29.8579 1.32233C28.8816 0.34602 27.2986 0.34602 26.3223 1.32233C25.346 2.29864 25.346 3.88155 26.3223 4.85786L40.4645 19L26.3223 33.1421C25.346 34.1184 25.346 35.7014 26.3223 36.6777C27.2986 37.654 28.8816 37.654 29.8579 36.6777L45.7678 20.7678ZM0 21.5H44V16.5H0V21.5Z" fill="#FFFFFF" fill-opacity="0.75"/>
             </svg>            
             <div className="flex flex-col items-center pb-5 md:pb-0">
-              <div className="mt-10 mb-4">
-                <Lottie options={ressourceOptions} height={85} width={85} />
+              <div className="w-[85px] h-[85px] mt-10 mb-4">
+                <Lottie animationData={ressources} loop={true} />
               </div>
               <p className="w-[115px] text-sm text-[#FFFFFF] text-center">
                 Nous assurons la <strong className="font-semibold">formation</strong> des futurs utilisateurs et la <strong className="font-semibold">maintenance</strong> de l’application 

@@ -1,5 +1,6 @@
 'use client'
 
+import Lottie from 'react-lottie'
 import Image from 'next/image'
 import { Icon } from "@iconify/react"
 import Link from 'next/link'
@@ -10,6 +11,10 @@ import arrow from '../../public/alt_arrow.json'
 import chart from '../../public/alt_chart.json'
 import signature from '../../public/alt_signature.json'
 import security from '../../public/alt_security.json'
+import alt_chart from '../../public/gradient_chart.json'
+import target from '../../public/gradient_target.json'
+import track from '../../public/gradient_location.json'
+import alt_security from '../../public/gradient_security.json'
 
 export default function Home() {
   const documentOptions = {
@@ -60,15 +65,47 @@ export default function Home() {
       preserveAspectRatio: 'xMidYMid slice'
     }
   }
+  const efficiencyOptions = {
+    loop: true,
+    autoplay: true,
+    animationData:alt_chart, 
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice'
+    }
+  }
+  const targetOptions = {
+    loop: true,
+    autoplay: true,
+    animationData:target, 
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice'
+    }
+  }
+  const trackOptions = {
+    loop: true,
+    autoplay: true,
+    animationData:track, 
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice'
+    }
+  }
+  const altSecurityOptions = {
+    loop: true,
+    autoplay: true,
+    animationData:alt_security, 
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice'
+    }
+  }
 
   return (
     <main className="flex min-h-screen flex-col items-center overflow-hidden">
       <section className="w-screen md:h-[560px] md:flex md:mt-[40px] md:mb-[60px] md:pt-24">
         <div className="pl-5 md:pl-[120px]">
-          <h1 className="md:w-[619px] md:text-[40px] text-[22px] text-[#343E61]"><span className="opacity-75">Révolutionnez les opérations de</span> traitement de courrier <span className="opacity-75 font-semibold">grâce à l'automatisation pilotée par l'</span>Intelligence Artificielle</h1>
-          <p className="px-2 md:w-[575px] my-4 md:mt-4 md:px-0 md:text-[18px] text-[#343E61]">
-            Le système automatise la numérisation des lettres physiques entrantes, extrait et analyse les informations pertinentes, génère et distribue des réponses, et assure la conformité et la sécurité tout au long du processus.            
-          </p>
+          <h1 className="md:w-[619px] md:text-[40px] text-[22px] text-[#343E61]"><span className="opacity-75">Révolutionnez les opérations de</span> traitement de courrier <span className="opacity-75 font-semibold">grâce à l'</span>IA</h1>
+          <div className="w-full flex justify-center">
+            <Link href='#contact' className=" flex justify-center items-center w-[191px] h-[49px] border-[3px] border-[#343E61] text-[#343E61] bg-primary bg-opacity-40 mt-[30px] font-semibold rounded-2xl hover:bg-opacity-80 hover:bg-[#343E61] hover:text-white">Contactez-nous</Link>
+          </div>        
         </div>
         <div className="w-[599px] h-[342px] md:w-[699px] md:h-[442px] relative">
           <Image src="/dashboard_alt.png" alt="auto mail dashboard screen" fill className="absolute" />
@@ -93,11 +130,43 @@ export default function Home() {
               <Card title="Analyse des données et rapports" defaultOptions={chartOptions} />
               <Card title="Conformité et sécurité" defaultOptions={securityOptions} />
             </div>  
-            <div className="w-full flex justify-center">
+            <div className="w-full flex justify-center pb-10">
               <Link href='/services' className=" flex justify-center items-center w-[324px] h-[49px] border-[3px] border-[#FFF] text-[#FFF] bg-primary bg-opacity-40 mb-[30px] font-semibold rounded-2xl hover:bg-opacity-80 hover:bg-[#FFF] hover:text-[#ffa498]">Voir toutes les fonctionnalités</Link>
             </div>         
           </div>
-
+        </div>
+      </section>
+      <section className="w-screen py-10 md:py-20 md:flex md:flex-col items-start bg-black">
+        <h2 className=" px-20 flex justify-center text-white text-xl text-center md:text-[34px]">Travailler plus intélligemment</h2>
+        <div className="w-screen px-6 flex justify-center">
+          <div className="w-1/4 flex flex-col items-start">
+            <div className="flex flex-col items-center mt-5 mb-2">
+                <Lottie options={efficiencyOptions} height={128} width={128} />
+                <h3 className="text-white text-3xl font-normal">Efficacité</h3>
+            </div>
+            <p className="text-[#767676] text-lg">Automatisation des opérations de tâches manuelles dans la salle des courriers</p>
+          </div>
+          <div className="w-1/4 flex flex-col items-start">
+            <div className="flex flex-col items-center mt-5 mb-2">
+                <Lottie options={targetOptions} height={128} width={128} />
+                <h3 className="text-white text-3xl font-normal">Précision</h3>
+            </div>
+            <p className="text-[#767676] text-lg">Génération automatisée de vos reponses grâce à l’IA</p>
+          </div>
+          <div className="w-1/4 flex flex-col items-start">
+            <div className="flex flex-col items-center mt-5 mb-2">
+                <Lottie options={trackOptions} height={128} width={128} />
+                <h3 className="text-white text-3xl font-normal">Traçabilité</h3>
+            </div>
+            <p className="text-[#767676] text-lg">Chaques éléments de vos courriers sont comptabilisés</p>
+          </div>
+          <div className="w-1/4 flex flex-col items-start">
+            <div className="flex flex-col items-center mt-5 mb-2">
+                <Lottie options={altSecurityOptions} height={128} width={128} />
+                <h3 className="text-white text-3xl font-normal">Sécurité</h3>
+            </div>
+            <p className="text-[#767676] text-lg">Garantie de confidentialité et d’intégrité des données sensibles</p>
+          </div>
         </div>
       </section>
       <section className="w-screen py-10 md:py-20 md:flex bg-[url(/bg_alt.png)] bg-no-repeat">

@@ -1,7 +1,6 @@
 'use client'
 import Image from 'next/image'
 import Lottie from 'react-lottie'
-import { Icon } from "@iconify/react"
 import demand from "../../../public/demand.json"
 import document from "../../../public/document.json"
 import cli from "../../../public/cli.json"
@@ -62,7 +61,7 @@ export default function Solutions() {
     return (
       <main className="flex flex-col items-center justify-between pt-12 px-12 md:pt-24 md:px-24 overflow-hidden">
         <section className="w-screen md:flex md:justify-center md:space-x-4 pb-12 md:pb-28">
-          <h1 className="md:w-[741px] text-[22px] md:text-[40px] mx-5 md:mx-0 text-[#FFFFFF]">
+          <h1 className="md:w-[741px] text-[22px] md:text-[40px] mx-5 md:mx-0 text-[#343E61]">
             <span className="opacity-75">En réduisant la</span> charge de travail manuelle<span className="opacity-75">, en optimisant les</span> temps de réponse <span className="opacity-75">et en protégeant les</span> informations critiques<span className="opacity-75">, AutoMail est une</span> solution moderne <span className="opacity-75">pour les</span> défis modernes.
           </h1>
           <div className="w-[337px] h-[344px] md:w-[437px] md:h-[444px] relative">
@@ -79,7 +78,6 @@ export default function Solutions() {
               <div className="mt-10 mb-4">
                 <Lottie options={demandOptions} height={85} width={85} />
               </div>
-              {/* <Icon icon="solar:headphones-square-sound-bold-duotone" width={85} height={85} color="#FFFFFF" className="mt-10 mb-4"/> */}
               <p className="w-[115px] text-sm text-[#FFFFFF] text-center">
                 Contactez notre <strong className="font-semibold">assistance</strong> pour discuter de vos particularités
               </p>
@@ -90,8 +88,7 @@ export default function Solutions() {
             <div className="flex flex-col items-center">
               <div className="mt-10 mb-4">
                 <Lottie options={documentOptions} height={85} width={85} />
-              </div>              
-              {/* <Icon icon="solar:chat-square-like-bold-duotone" width={85} height={85} color="#FFFFFF" className="mt-10 mb-4"/> */}
+              </div>
               <p className="w-[115px] text-sm text-[#FFFFFF] text-center">
                 Etablissez les <strong className="font-semibold">particularités</strong> de votre système
               </p>
@@ -103,7 +100,6 @@ export default function Solutions() {
               <div className="mt-10 mb-4">
                 <Lottie options={layerOptions} height={85} width={85} />
               </div>
-              {/* <Icon icon="solar:notification-unread-lines-bold-duotone" width={85} height={85} color="#FFFFFF" className="mt-10 mb-4"/> */}
               <p className="w-[115px] text-sm text-[#FFFFFF] text-center">
                 Nous dressons un <strong className="font-semibold">cahier de charge</strong> relatif à vos besoins
               </p>
@@ -114,8 +110,7 @@ export default function Solutions() {
             <div className="flex flex-col items-center">
               <div className="mt-10 mb-4">
                 <Lottie options={cliOptions} height={85} width={85} />
-              </div>              
-              {/* <Icon icon="solar:monitor-bold-duotone" width={85} height={85} color="#FFFFFF" className="mt-10 mb-4"/> */}
+              </div>
               <p className="w-[115px] text-sm text-[#FFFFFF] text-center">
                 Nous adaptons vos besoins en une <strong className="font-semibold">version personnalisée</strong>
               </p>
@@ -127,7 +122,6 @@ export default function Solutions() {
               <div className="mt-10 mb-4">
                 <Lottie options={trolleyOptions} height={85} width={85} />
               </div>
-              {/* <Icon icon="solar:delivery-bold-duotone" width={85} height={85} color="#FFFFFF" className="mt-10 mb-4"/> */}
               <p className="w-[115px] text-sm text-[#FFFFFF] text-center">
                 Nous <strong className="font-semibold">livrons</strong> et <strong className="font-semibold">installons</strong> votre version personnalisée
               </p>
@@ -139,7 +133,6 @@ export default function Solutions() {
               <div className="mt-10 mb-4">
                 <Lottie options={ressourceOptions} height={85} width={85} />
               </div>
-              {/* <Icon icon="solar:presentation-graph-bold-duotone" width={85} height={85} color="#FFFFFF" className="mt-10 mb-4"/> */}
               <p className="w-[115px] text-sm text-[#FFFFFF] text-center">
                 Nous assurons la <strong className="font-semibold">formation</strong> des futurs utilisateurs et la <strong className="font-semibold">maintenance</strong> de l’application 
               </p>

@@ -4,8 +4,63 @@ import Image from 'next/image'
 import { Icon } from "@iconify/react"
 import Link from 'next/link'
 import Card from '@/components/card'
+import document from '../../public/alt_document.json'
+import folder from '../../public/alt_folder.json'
+import arrow from '../../public/alt_arrow.json'
+import chart from '../../public/alt_chart.json'
+import signature from '../../public/alt_signature.json'
+import security from '../../public/alt_security.json'
 
 export default function Home() {
+  const documentOptions = {
+    loop: true,
+    autoplay: true,
+    animationData:document, 
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice'
+    }
+  }
+  const folderOptions = {
+    loop: true,
+    autoplay: true,
+    animationData:folder, 
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice'
+    }
+  }
+  const arrowOptions = {
+    loop: true,
+    autoplay: true,
+    animationData:arrow, 
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice'
+    }
+  }
+  const signatureOptions = {
+    loop: true,
+    autoplay: true,
+    animationData:signature, 
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice'
+    }
+  }
+  const chartOptions = {
+    loop: true,
+    autoplay: true,
+    animationData:chart, 
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice'
+    }
+  }
+  const securityOptions = {
+    loop: true,
+    autoplay: true,
+    animationData:security, 
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice'
+    }
+  }
+
   return (
     <main className="flex min-h-screen flex-col items-center overflow-hidden">
       <section className="w-screen md:h-[560px] md:flex md:mt-[40px] md:mb-[60px] md:pt-24">
@@ -28,56 +83,21 @@ export default function Home() {
             </div>
             <div className="w-[762px] h-12 pl-[120px] gradientBg">
             </div>
-            <div className="w-full md:w-[762px] px-5 md:pl-[120px] space-y-2">
-              <p className="w-full md:w-[611px]">
-                Les organisations recevant quotidiennement un volume important de lettres physiques, la gestion et la réponse à ces communications de manière efficiente peuvent constituer un défi.
-              </p>
-              <p className="w-full md:w-[592px]">
-              Le traitement manuel est non seulement chronophage, mais aussi source d'erreurs. AutoMail est conçu pour relever ces défis en automatisant le processus et en exploitant l'IA pour garantir la précision, l'efficience et la sécurité.
-              </p>
-            </div>
-            <div className="flex justify-center">
-              <Link href='/services' className=" flex justify-center items-center w-[191px] h-[49px] border-[3px] border-[#FFF] text-[#FFF] bg-primary bg-opacity-40 mt-[30px] font-semibold rounded-2xl hover:bg-opacity-80 hover:bg-[#FFF] hover:text-[#ffa498]">En savoir plus</Link>
-            </div>
           </div>
-          <div className="md:w-1/2 flex flex-wrap justify-end py-[75px] md:py-0 md:px-[75px] md:pb-20">
-            <Card>
-              <Icon icon="solar:object-scan-bold-duotone" width={85} height={85} color="#FF6854" className="mt-10 mb-4"/>
-              <h3 className="text-[#343E61] w-[160px] px-5 md:px-0 mb-8 text-lg font-bold">
-                Numérisation automatisée des lettres
-              </h3>
-            </Card>
-            <Card>
-              <Icon icon="solar:move-to-folder-bold-duotone" width={85} height={85} color="#FF6854" className="mt-10 mb-4"/>
-              <h3 className="text-[#343E61] w-[160px] px-5 md:px-0 mb-8 text-lg font-bold">
-                Analyse et catégorisation assistées par l'IA
-              </h3>
-            </Card>
-            <Card>
-              <Icon icon="solar:dialog-2-bold-duotone" width={85} height={85} color="#FF6854" className="mt-10 mb-4"/>
-              <h3 className="text-[#343E61] w-[160px] px-5 md:px-0 mb-8 text-lg font-bold">
-                Génération automatisée de réponses
-              </h3>
-            </Card>
-            <Card>
-              <Icon icon="solar:pen-2-bold-duotone" width={85} height={85} color="#FF6854" className="mt-10 mb-4"/>
-              <h3 className="text-[#343E61] w-[160px] px-5 md:px-0 mb-8 text-lg font-bold">
-                Ajout et envoi de signatures électroniques
-              </h3>
-            </Card>
-            <Card>
-              <Icon icon="solar:chart-2-bold-duotone" width={85} height={85} color="#FF6854" className="mt-10 mb-4"/>
-              <h3 className="text-[#343E61] w-[160px] px-5 md:px-0 mb-8 text-lg font-bold">
-                Analyse des données et rapports
-              </h3>
-            </Card>
-            <Card>
-              <Icon icon="solar:lock-password-unlocked-bold-duotone" width={85} height={85} color="#FF6854" className="mt-10 mb-4"/>
-              <h3 className="text-[#343E61] w-[160px] px-5 md:px-0 mb-8 text-lg font-bold">
-                Conformité et sécurité
-              </h3>
-            </Card>                                                            
+          <div className="md:w-1/2 flex flex-col justify-start">
+            <div className="md:w-full flex flex-wrap justify-end py-[5px] md:py-0 md:px-[5px] md:pb-5">
+              <Card title="Numérisation automatisée des lettres" defaultOptions={documentOptions} />
+              <Card title="Analyse et catégorisation assistées par l'IA" defaultOptions={folderOptions} />
+              <Card title="Génération automatisée de réponses" defaultOptions={arrowOptions} />
+              <Card title="Ajout et envoi de signatures électroniques" defaultOptions={signatureOptions} />
+              <Card title="Analyse des données et rapports" defaultOptions={chartOptions} />
+              <Card title="Conformité et sécurité" defaultOptions={securityOptions} />
+            </div>  
+            <div className="w-full flex justify-center">
+              <Link href='/services' className=" flex justify-center items-center w-[324px] h-[49px] border-[3px] border-[#FFF] text-[#FFF] bg-primary bg-opacity-40 mb-[30px] font-semibold rounded-2xl hover:bg-opacity-80 hover:bg-[#FFF] hover:text-[#ffa498]">Voir toutes les fonctionnalités</Link>
+            </div>         
           </div>
+
         </div>
       </section>
       <section className="w-screen py-10 md:py-20 md:flex bg-[url(/bg_alt.png)] bg-no-repeat">

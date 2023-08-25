@@ -15,6 +15,7 @@ import alt_chart from '../../public/gradient_chart.json'
 import target from '../../public/gradient_target.json'
 import track from '../../public/gradient_location.json'
 import alt_security from '../../public/gradient_security.json'
+import code from '../../public/gradient_code.json'
 
 export default function Home() {
   const documentOptions = {
@@ -97,6 +98,14 @@ export default function Home() {
       preserveAspectRatio: 'xMidYMid slice'
     }
   }
+  const codeOptions = {
+    loop: true,
+    autoplay: true,
+    animationData:code, 
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice'
+    }
+  }
 
   return (
     <main className="flex min-h-screen flex-col items-center overflow-hidden">
@@ -137,7 +146,7 @@ export default function Home() {
         </div>
       </section>
       <section className="w-screen py-10 md:py-20 md:flex md:flex-col items-start bg-black">
-        <h2 className=" px-20 flex justify-center text-white text-xl text-center md:text-[34px]">Travailler plus intélligemment</h2>
+        <h2 className="px-20 pb-5 flex justify-center text-white text-xl text-center md:text-[34px]">Travailler plus intélligemment</h2>
         <div className="w-screen px-6 flex justify-center">
           <div className="w-1/4 flex flex-col items-start">
             <div className="flex flex-col items-center mt-5 mb-2">
@@ -168,18 +177,23 @@ export default function Home() {
             <p className="text-[#767676] text-lg">Garantie de confidentialité et d’intégrité des données sensibles</p>
           </div>
         </div>
-      </section>
-      <section className="w-screen py-10 md:py-20 md:flex bg-[url(/bg_alt.png)] bg-no-repeat">
-        <div className="md:w-[719px] mx-5 md:ml-20">
-          <Icon icon="fa:quote-left" width={45} height={45} color="#FF6854" className=""/>
-          <h2 className="w-full md:w-[719px] text-[#343E61] text-[22px] md:text-[34px] mb-4">AutoMail <span className="opacity-75 font-semibold">est une solution qui change la donne pour les opérations de </span>traitement du courrier<span className="opacity-75 font-semibold">, combinant </span>l'automatisation<span className="opacity-75 font-semibold">, </span>l'IA<span className="opacity-75 font-semibold"> et des </span>fonctions de sécurité<span className="opacity-75 font-semibold"> pour assurer un </span>traitement efficient<span className="opacity-75 font-semibold"> et </span>sécurisé<span className="opacity-75 font-semibold"> des lettres physiques.</span></h2>
-          <p className="w-full md:w-[575px] text-[#343E61]">Grâce à sa suite complète d'outils, AutoMail ne se contente pas de rationaliser le processus, mais donne également aux organisations les moyens de gérer les communications avec agilité et précision.</p>
-          <div className="w-full flex justify-center">
-            <Link href='/solutions' className=" flex justify-center items-center w-[191px] h-[49px] border-[3px] border-[#FF6854] text-[#FF6854] bg-primary bg-opacity-40 mt-[30px] font-semibold rounded-2xl hover:bg-opacity-80 hover:bg-[#FF6854] hover:text-white">En savoir plus</Link>
+        <div className="w-screen px-6 mt-14 flex justify-center">
+          <div className="border border-[#4F4F4F] w-[1305px] h-[597px] rounded-[40px] mb-10 flex items-center">
+            <div className="w-[70%]">
+              <h2 className="px-14 pb-5 flex justify-start text-white text-xl text-center font-medium md:text-[34px]">
+                Un environnement de travail allégé
+              </h2>
+              <p className="text-[#767676] text-lg pl-14 pb-5 ">
+                Grâce à l’intégration du code QR, Automail vous permet d’acceder aux données de tous vos courriers peu importe où vous vous trouvez.
+              </p>
+              <div className="w-full flex justify-start px-20">
+                <Link href='/solutions' className=" flex justify-center items-center w-[191px] h-[49px] border-[3px] border-[#FFF] text-[#FFF] bg-primary bg-opacity-40 mt-[30px] font-semibold rounded-2xl hover:bg-opacity-80 hover:bg-[#FFF] hover:text-black">En savoir plus</Link>
+              </div>
+            </div>
+            <div className="w-[30%]">
+              <Lottie options={codeOptions} height={400} width={400} />
+            </div>
           </div>
-        </div>
-        <div className="w-1/3 relative">
-          <Image src="/charts.svg" alt="auto mail dashboard screen" fill className="absolute" />
         </div>
       </section>
     </main>

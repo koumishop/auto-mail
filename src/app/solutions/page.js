@@ -28,7 +28,7 @@ export default function Solutions() {
           <div className="md:w-[1236px] flex flex-col md:flex-row items-start justify-between">
             <div className="flex flex-col items-center">
               <div className="w-[85px] h-[85px] mt-10 mb-4">
-                <Lottie options={demand} loop={true} />
+                <Lottie animationData={demand} loop={true} />
               </div>
               <p className="w-[115px] text-sm text-[#FFFFFF] text-center">
                 Contactez notre <strong className="font-semibold">assistance</strong> pour discuter de vos particularités

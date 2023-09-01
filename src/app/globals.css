@@ -25,3 +25,21 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+h1, h2{
+  opacity: 1;
+  font-weight:700;
+}
+
+p{
+  font-size: 18px;
+}
+
+.defaultBg{
+  background-image: url("../../public/bg.png") ;
+  background-repeat: no-repeat;
+}
+
+.gradientBg{
+  background: linear-gradient(180deg, rgba(217, 217, 217, 0.88) 0%, rgba(217, 217, 217, 0.00) 100%);
+}

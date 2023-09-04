@@ -32,7 +32,7 @@ export default function Home() {
         </div>
       </section>
       <section className="w-screen bg-[#ffa498]">
-        <h2 className="flex justify-center text-xl text-center md:text-[34px] my-10 md:my-20">Outils de gestion des courriers en temps réel</h2>
+        <h2 className="flex justify-center text-xl text-white text-center md:text-[34px] my-10 md:my-20">Outils de gestion des courriers en temps réel</h2>
         <div className="w-screen md:flex">
           <div className="md:w-1/2">
             <div className="w-[662px] h-[340px] md:w-[762px] md:h-[440px]  relative">

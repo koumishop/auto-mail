@@ -21,8 +21,8 @@ export default function Solutions() {
           </div>
         </section>
         <section className="w-screen md:h-[526px] flex flex-col items-center bg-black">
-          <h2 className="flex justify-center  text-xl md:text-[34px] mt-12 mx-5 md:mx-0 md:mt-24 md:mb-9">Outils de gestion des courriers ajustable et adapté aux besoin du client</h2>
-          <p className="w-full md:w-[1236px] px-5 md:px-0 ">
+          <h2 className="flex justify-center  text-xl text-white md:text-[34px] mt-12 mx-5 md:mx-0 md:mt-24 md:mb-9">Outils de gestion des courriers ajustable et adapté aux besoin du client</h2>
+          <p className="w-full md:w-[1236px] px-5 md:px-0 text-white">
             Grâce à une assistance permanente et à des capacités de personnalisation, il constitue une solution évolutive qui peut s'adapter aux besoins croissants de n'importe quelle organisation.
           </p>
           <div className="md:w-[1236px] flex flex-col md:flex-row items-start justify-between">

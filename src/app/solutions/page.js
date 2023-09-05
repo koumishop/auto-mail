@@ -13,7 +13,7 @@ export default function Solutions() {
     return (
       <main className="flex flex-col items-center justify-between pt-12 px-12 md:pt-24 md:px-24 overflow-hidden">
         <section className="w-screen md:flex md:justify-center md:space-x-4 pb-12 md:pb-28">
-          <h1 className="md:w-[741px] text-4xl md:text-5xl md:leading-snug mx-5 md:mx-0 text-[#343E61]">
+          <h1 className="md:w-[741px] text-4xl md:text-5xl leading-snug mx-5 md:mx-0 text-[#343E61]">
             <span className="opacity-75">En réduisant la</span> charge de travail manuelle<span className="opacity-75">, en optimisant les</span> temps de réponse <span className="opacity-75">et en protégeant les</span> informations critiques<span className="opacity-75">, AutoMail est une</span> solution moderne <span className="opacity-75">pour les</span> défis modernes.
           </h1>
           <div className="w-[337px] h-[344px] md:w-[437px] md:h-[444px] relative">
@@ -21,7 +21,7 @@ export default function Solutions() {
           </div>
         </section>
         <section className="w-screen md:h-[526px] flex flex-col items-center bg-black">
-          <h2 className="flex justify-center  text-xl text-white md:text-[34px] mt-12 mx-5 md:mx-0 md:mt-24 md:mb-9">Outils de gestion des courriers ajustable et adapté aux besoin du client</h2>
+          <h2 className="flex justify-center  text-3xl text-white md:text-[34px] mt-12 mx-5 md:mx-0 md:mt-24 md:mb-9">Outils de gestion des courriers ajustable et adapté aux besoin du client</h2>
           <p className="w-full md:w-[1236px] px-5 md:px-0 text-white">
             Grâce à une assistance permanente et à des capacités de personnalisation, il constitue une solution évolutive qui peut s'adapter aux besoins croissants de n'importe quelle organisation.
           </p>

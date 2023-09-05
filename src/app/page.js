@@ -22,7 +22,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center overflow-hidden">
       <section className="w-screen md:h-[560px] md:flex md:mt-[40px] md:mb-[60px] md:pt-24">
         <div className="pl-5 md:pl-[120px]">
-          <h1 className="md:w-[619px] md:text-[40px] text-[22px] text-[#343E61]"><span className="opacity-75">Révolutionnez les opérations de</span> traitement de courrier <span className="opacity-75 font-semibold">grâce à l'</span>IA</h1>
+          <h1 className="md:w-[619px] md:text-[40px] text-[22px] text-[#343E61]"><span className="opacity-75">Révolutionnez les opérations de</span> traitement de courrier <span className="opacity-75">grâce à l'</span>IA</h1>
           <div className="w-full flex justify-center">
             <Link href='#contact' className=" flex justify-center items-center w-[191px] h-[49px] border-[3px] border-[#343E61] text-[#343E61] bg-primary bg-opacity-40 mt-[30px] font-semibold rounded-2xl hover:bg-opacity-80 hover:bg-[#343E61] hover:text-white">Contactez-nous</Link>
           </div>        

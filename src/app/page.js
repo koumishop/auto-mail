@@ -77,15 +77,15 @@ export default function Home() {
       </section>
       <section className="w-screen bg-[#ffa498]">
         <h2 className="flex justify-center text-3xl text-white text-center md:text-[34px] my-10 md:my-20">Outils de gestion des courriers en temps réel</h2>
-        <div className="w-screen md:flex">
-          <div className="md:w-1/2">
-            <div className="w-[662px] h-[340px] md:w-[762px] md:h-[440px]  relative">
+        <div className="w-full md:flex">
+          <div className="md:w-[50%]">
+            <div className="w-[662px] h-[340px] md:w-[730px] md:h-[440px]  relative">
               <Image src="/mailbox.png" alt="auto mail dashboard screen" fill className="absolute" />
             </div>
-            <div className="w-[762px] h-12 pl-[120px] gradientBg">
+            <div className="w-[730px] h-12 pl-[120px] gradientBg">
             </div>
           </div>
-          <div className="md:w-1/2 flex flex-col justify-start">
+          <div className="md:w-[50%] flex flex-col justify-start">
             <div className="md:w-full flex flex-wrap justify-center items-center md:justify-end py-[5px] md:py-0 md:px-[5px] md:pb-5">
               <Card title="Numérisation automatisée des lettres" animationData={document} />
               <Card title="Analyse et catégorisation assistées par l'IA" animationData={folder} />
@@ -113,7 +113,7 @@ export default function Home() {
               />
               <h3 className="text-white text-3xl font-normal">Efficacité</h3>
             </div>
-            <p className="text-[#767676] text-lg">Automatisation des opérations de tâches manuelles dans la salle des courriers</p>
+            <p className="w-[95%] text-[#767676] text-lg">Automatisation des opérations de tâches manuelles dans la salle des courriers</p>
           </div>
           <div className="w-1/2 md:w-1/4 flex flex-col items-start ">
             <div className="flex flex-col items-center mt-5 mb-2">
@@ -125,7 +125,7 @@ export default function Home() {
                 />
               <h3 className="text-white text-3xl font-normal">Précision</h3>
             </div>
-            <p className="text-[#767676] text-lg">Génération automatisée de vos reponses grâce à l’IA</p>
+            <p className="w-[97%] text-[#767676] text-lg">Génération automatisée de vos reponses grâce à l’IA</p>
           </div>
           <div className="w-1/2 md:w-1/4 flex flex-col items-start ">
             <div className="flex flex-col items-center mt-5 mb-2">
@@ -137,7 +137,7 @@ export default function Home() {
                 />
                 <h3 className="text-white text-3xl font-normal">Traçabilité</h3>
             </div>
-            <p className="text-[#767676] text-lg">Chaques éléments de vos courriers sont comptabilisés</p>
+            <p className="w-[97%] text-[#767676] text-lg">Chaques éléments de vos courriers sont comptabilisés</p>
           </div>
           <div className="w-1/2 md:w-1/4 flex flex-col items-start ">
             <div className="flex flex-col items-center mt-5 mb-2">
@@ -149,7 +149,7 @@ export default function Home() {
                 />
                 <h3 className="text-white text-3xl font-normal">Sécurité</h3>
             </div>
-            <p className="text-[#767676] text-lg">Garantie de confidentialité et d’intégrité des données sensibles</p>
+            <p className="w-[97%] text-[#767676] text-lg">Garantie de confidentialité et d’intégrité des données sensibles</p>
           </div>
         </div>
         <div className="w-screen px-6 mt-14 flex justify-center">

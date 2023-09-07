@@ -1,5 +1,7 @@
 'use client'
 
+import { useEffect, useRef } from "react"
+import webLottie from 'lottie-web'
 import Lottie from 'lottie-react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -10,13 +12,55 @@ import arrow from '../../public/alt_arrow.json'
 import chart from '../../public/alt_chart.json'
 import signature from '../../public/alt_signature.json'
 import security from '../../public/alt_security.json'
-import alt_chart from '../../public/gradient_chart.json'
-import target from '../../public/gradient_target.json'
-import track from '../../public/gradient_location.json'
-import alt_security from '../../public/gradient_security.json'
 import code from '../../public/gradient_code.json'
 
 export default function Home() {
+  const efficiency = useRef(null);
+  const precision = useRef(null);
+  const tracking = useRef(null);
+  const shield = useRef(null);
+
+  useEffect(() => {
+    webLottie.loadAnimation({
+      name: "efficiency",
+      container: efficiency.current,
+      renderer: "svg",
+      loop: true,
+      autoplay: false,
+      animationData: require("../../public/gradient_chart.json")
+    });
+
+    webLottie.loadAnimation({
+      name: "precision",
+      container: precision.current,
+      renderer: "svg",
+      loop: true,
+      autoplay: false,
+      animationData: require("../../public/gradient_target.json")
+    });
+
+    webLottie.loadAnimation({
+      name: "tracking",
+      container: tracking.current,
+      renderer: "svg",
+      loop: true,
+      autoplay: false,
+      animationData: require("../../public/gradient_location.json")
+    });
+
+    webLottie.loadAnimation({
+      name: "shield",
+      container: shield.current,
+      renderer: "svg",
+      loop: true,
+      autoplay: false,
+      animationData: require("../../public/gradient_security.json")
+    });
+
+    return () => {
+      webLottie.destroy();
+    };
+  }, []);
 
   return (
     <main className="flex min-h-screen flex-col items-center overflow-hidden">
@@ -60,37 +104,49 @@ export default function Home() {
         <h2 className="md:px-20 md:pb-5 md:flex md:justify-center text-white text-3xl text-center md:text-[34px]">Travailler plus intélligemment</h2>
         <div className="w-screen px-6 flex flex-row flex-wrap items-start md:flex-row justify-center">
           <div className="w-1/2 md:w-1/4 flex flex-col items-start ">
-            <div className="flex flex-col items-center mt-5 mb-2">
-              <div className="w-[128px] h-[128px]">
-                <Lottie animationData={alt_chart} loop={true} />
-              </div>
-                <h3 className="text-white text-3xl font-normal">Efficacité</h3>
+            <div className="flex flex-col items-center mt-5 mb-2">              
+              <div
+                ref={efficiency}
+                onMouseEnter={() => webLottie.play("efficiency")}
+                onMouseLeave={() => webLottie.pause("efficiency")}
+                className="w-[128px] h-[128px]"
+              />
+              <h3 className="text-white text-3xl font-normal">Efficacité</h3>
             </div>
             <p className="text-[#767676] text-lg">Automatisation des opérations de tâches manuelles dans la salle des courriers</p>
           </div>
           <div className="w-1/2 md:w-1/4 flex flex-col items-start ">
             <div className="flex flex-col items-center mt-5 mb-2">
-              <div className="w-[128px] h-[128px]">
-                <Lottie animationData={target} loop={true} height={128} width={128} />
-              </div>
+              <div
+                  ref={precision}
+                  onMouseEnter={() => webLottie.play("precision")}
+                  onMouseLeave={() => webLottie.pause("precision")}
+                  className="w-[128px] h-[128px]"
+                />
               <h3 className="text-white text-3xl font-normal">Précision</h3>
             </div>
             <p className="text-[#767676] text-lg">Génération automatisée de vos reponses grâce à l’IA</p>
           </div>
           <div className="w-1/2 md:w-1/4 flex flex-col items-start ">
             <div className="flex flex-col items-center mt-5 mb-2">
-              <div className="w-[128px] h-[128px]">
-                <Lottie animationData={track} loop={true} height={128} width={128} />
-              </div>
+              <div
+                  ref={tracking}
+                  onMouseEnter={() => webLottie.play("tracking")}
+                  onMouseLeave={() => webLottie.pause("tracking")}
+                  className="w-[128px] h-[128px]"
+                />
                 <h3 className="text-white text-3xl font-normal">Traçabilité</h3>
             </div>
             <p className="text-[#767676] text-lg">Chaques éléments de vos courriers sont comptabilisés</p>
           </div>
           <div className="w-1/2 md:w-1/4 flex flex-col items-start ">
             <div className="flex flex-col items-center mt-5 mb-2">
-              <div className="w-[128px] h-[128px]">
-                <Lottie animationData={alt_security} loop={true} height={128} width={128} />
-              </div>
+              <div
+                  ref={shield}
+                  onMouseEnter={() => webLottie.play("shield")}
+                  onMouseLeave={() => webLottie.pause("shield")}
+                  className="w-[128px] h-[128px]"
+                />
                 <h3 className="text-white text-3xl font-normal">Sécurité</h3>
             </div>
             <p className="text-[#767676] text-lg">Garantie de confidentialité et d’intégrité des données sensibles</p>

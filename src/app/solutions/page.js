@@ -13,8 +13,8 @@ export default function Solutions() {
     return (
       <main className="flex flex-col items-center justify-between pt-12 px-12 md:pt-24 md:px-24 overflow-hidden">
         <section className="w-screen md:flex md:justify-center md:space-x-4 pb-12 md:pb-28">
-          <h1 className="md:w-[741px] text-4xl md:text-5xl leading-snug mx-5 md:mx-0 text-[#343E61]">
-            <span className="opacity-75">En réduisant la</span> charge de travail manuelle<span className="opacity-75">, en optimisant les</span> temps de réponse <span className="opacity-75">et en protégeant les</span> informations critiques<span className="opacity-75">, AutoMail est une</span> solution moderne <span className="opacity-75">pour les</span> défis modernes.
+          <h1 className="md:w-[741px] text-4xl md:text-5xl leading-normal mx-5 md:mx-0 text-[#343E61]">
+            <span className="opacity-75">AutoMail est une</span> solution moderne <span className="opacity-75">pour les</span> défis modernes.
           </h1>
           <div className="w-[337px] h-[344px] md:w-[437px] md:h-[444px] relative">
             <Image src="/charts.svg" alt="auto mail dashboard screen" fill className="absolute" />
@@ -28,7 +28,7 @@ export default function Solutions() {
           <div className="md:w-[1236px] flex flex-col md:flex-row items-start justify-between">
             <div className="flex flex-col items-center">
               <div className="w-[85px] h-[85px] mt-10 mb-4">
-                <Lottie animationData={demand} loop={true} />
+                <Lottie animationData={demand} loop={true} on />
               </div>
               <p className="w-[115px] text-sm text-[#FFFFFF] text-center">
                 Contactez notre <strong className="font-semibold">assistance</strong> pour discuter de vos particularités

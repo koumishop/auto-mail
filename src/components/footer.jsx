@@ -13,10 +13,10 @@ export default function Footer() {
       <footer id="contact" className="flex flex-col items-center px-2 md:px-0 md:flex-row md:items-start md:justify-center space-y-2 pt-16  defaultBg">
         <div className="w-1/4 flex flex-col items-center">
             <Link href="/" className="w-[254px] h-[170px] flex justify-center md:relative">
-                <Image src="/auto_mail_logo.png" alt="logo" width={254} height={170} className="md:hidden"/>
-                <Image src="/auto_mail_logo.png" alt="logo" width={254} height={170} className="hidden md:flex md:absolute"/>
+                <Image src="/auto_mail_logo_alt.png" alt="logo" width={254} height={170} className="md:hidden"/>
+                <Image src="/auto_mail_logo_alt.png" alt="logo" width={254} height={170} className="hidden md:flex md:absolute"/>
             </Link>
-            <h2 className="w-[370px] text-[#343E61] font-semibold text-[34px]">Revolutionnez votre salle de courriers.</h2>   
+            <h2 className="w-[370px] text-[#343E61] font-semibold text-[34px] md:mt-16">Revolutionnez votre salle de courriers.</h2>   
         </div>
 
         <form onSubmit={handleSubmit} 

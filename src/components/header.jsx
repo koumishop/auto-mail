@@ -9,8 +9,8 @@ export default function Header() {
     return(
         <header className="w-screen h-20 bg-transparent flex">
             <Link href="/" className="w-1/4 md:relative md:pl-[68px]">
-                <Image src="/auto_mail_logo.png" alt="logo" width={118} height={68} className="md:hidden"/>
-                <Image src="/auto_mail_logo.png" alt="logo" width={148} height={98} className="hidden md:flex md:absolute"/>
+                <Image src="/auto_mail_logo_alt.png" alt="logo" width={118} height={68} className="md:hidden"/>
+                <Image src="/auto_mail_logo_alt.png" alt="logo" width={148} height={98} className="hidden md:flex md:absolute"/>
             </Link>
             <nav className="hidden md:flex md:relative md:items-center md:space-x-8 md:text-[#343E61] md:font-normal md:text-sm md:ml-[400px]">
                 <Link href='/' className="hover:font-semibold">Accueil</Link>

@@ -2,25 +2,79 @@
 
 import { useEffect, useRef } from "react"
 import webLottie from 'lottie-web'
-import Lottie from 'lottie-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import Card from '@/components/card'
-import document from '../../public/alt_document.json'
-import folder from '../../public/alt_folder.json'
-import arrow from '../../public/alt_arrow.json'
-import chart from '../../public/alt_chart.json'
-import signature from '../../public/alt_signature.json'
-import security from '../../public/alt_security.json'
-import code from '../../public/gradient_code.json'
+//import code from '../../public/gradient_code.json'
 
 export default function Home() {
+  const folder = useRef(null);
+  const arrow = useRef(null);
+  const document = useRef(null);
+  const chart = useRef(null);
+  const signature = useRef(null);
+  const security = useRef(null);
+  const code = useRef(null);
   const efficiency = useRef(null);
   const precision = useRef(null);
   const tracking = useRef(null);
   const shield = useRef(null);
 
   useEffect(() => {
+    webLottie.loadAnimation({
+      name: "document",
+      container: document.current,
+      renderer: "svg",
+      loop: true,
+      autoplay: false,
+      animationData: require('../../public/alt_document.json')
+    });
+
+    webLottie.loadAnimation({
+      name: "folder",
+      container: folder.current,
+      renderer: "svg",
+      loop: true,
+      autoplay: false,
+      animationData: require('../../public/alt_folder.json')
+    });
+
+    webLottie.loadAnimation({
+      name: "arrow",
+      container: arrow.current,
+      renderer: "svg",
+      loop: true,
+      autoplay: false,
+      animationData: require('../../public/alt_arrow.json')
+    });
+
+    webLottie.loadAnimation({
+      name: "chart",
+      container: chart.current,
+      renderer: "svg",
+      loop: true,
+      autoplay: false,
+      animationData: require('../../public/alt_chart.json')
+    });
+
+    webLottie.loadAnimation({
+      name: "signature",
+      container: signature.current,
+      renderer: "svg",
+      loop: true,
+      autoplay: false,
+      animationData: require('../../public/alt_signature.json')
+    });
+
+    webLottie.loadAnimation({
+      name: "security",
+      container: security.current,
+      renderer: "svg",
+      loop: true,
+      autoplay: false,
+      animationData: require('../../public/alt_security.json')
+    });
+
     webLottie.loadAnimation({
       name: "efficiency",
       container: efficiency.current,
@@ -57,6 +111,15 @@ export default function Home() {
       animationData: require("../../public/gradient_security.json")
     });
 
+    webLottie.loadAnimation({
+      name: "code",
+      container: code.current,
+      renderer: "svg",
+      loop: true,
+      autoplay: false,
+      animationData: require("../../public/gradient_code.json")
+    });
+
     return () => {
       webLottie.destroy();
     };
@@ -87,12 +150,54 @@ export default function Home() {
           </div>
           <div className="md:w-[50%] flex flex-col justify-start">
             <div className="md:w-full flex flex-wrap justify-center items-center md:justify-end py-[5px] md:py-0 md:px-[5px] md:pb-5">
-              <Card title="Numérisation automatisée des lettres" animationData={document} />
-              <Card title="Analyse et catégorisation assistées par l'IA" animationData={folder} />
-              <Card title="Génération automatisée de réponses" animationData={arrow} />
-              <Card title="Ajout et envoi de signatures électroniques" animationData={signature} />
-              <Card title="Analyse des données et rapports" animationData={chart} />
-              <Card title="Conformité et sécurité" animationData={security} />
+              <Card title="Numérisation automatisée des lettres">
+                <div
+                  ref={document}
+                  onMouseEnter={() => webLottie.play("document")}
+                  onMouseLeave={() => webLottie.pause("document")}
+                  className="mt-5 mb-2 w-[85px] h-[85px]"
+                />
+              </Card>
+              <Card title="Analyse et catégorisation assistées par l'IA">
+                <div
+                  ref={folder}
+                  onMouseEnter={() => webLottie.play("folder")}
+                  onMouseLeave={() => webLottie.pause("folder")}
+                  className="mt-5 mb-2 w-[85px] h-[85px]"
+                />
+              </Card>
+              <Card title="Génération automatisée de réponses">
+                <div
+                  ref={arrow}
+                  onMouseEnter={() => webLottie.play("arrow")}
+                  onMouseLeave={() => webLottie.pause("arrow")}
+                  className="mt-5 mb-2 w-[85px] h-[85px]"
+                />
+              </Card>
+              <Card title="Analyse des données et rapports">
+                <div
+                  ref={chart}
+                  onMouseEnter={() => webLottie.play("chart")}
+                  onMouseLeave={() => webLottie.pause("chart")}
+                  className="mt-5 mb-2 w-[85px] h-[85px]"
+                />
+              </Card>
+              <Card title="Ajout et envoi de signatures électroniques">
+                <div
+                  ref={signature}
+                  onMouseEnter={() => webLottie.play("signature")}
+                  onMouseLeave={() => webLottie.pause("signature")}
+                  className="mt-5 mb-2 w-[85px] h-[85px]"
+                />
+              </Card>
+              <Card title="Conformité et sécurité">
+                <div
+                  ref={security}
+                  onMouseEnter={() => webLottie.play("security")}
+                  onMouseLeave={() => webLottie.pause("security")}
+                  className="mt-5 mb-2 w-[85px] h-[85px]"
+                />
+              </Card>                            
             </div>  
             <div className="w-full flex justify-center pb-10">
               <Link href='/services' className=" flex justify-center items-center w-[324px] h-[49px] border-[3px] border-[#FFF] text-[#FFF] bg-primary bg-opacity-40 mb-[30px] font-semibold rounded-2xl hover:bg-opacity-80 hover:bg-[#FFF] hover:text-[#ffa498]">Voir toutes les fonctionnalités</Link>
@@ -165,9 +270,15 @@ export default function Home() {
                 <Link href='/solutions' className=" flex justify-center items-center w-[191px] h-[49px] border-[3px] border-[#FFF] text-[#FFF] bg-primary bg-opacity-40 mt-[30px] font-semibold rounded-2xl hover:bg-opacity-80 hover:bg-[#FFF] hover:text-black">En savoir plus</Link>
               </div>
             </div>
-            <div className="w-[70%] md:w-[30%]">
+            <div
+              ref={code}
+              onMouseEnter={() => webLottie.pause("code")}
+              onMouseLeave={() => webLottie.play("code")}
+              className="w-[70%] md:w-[30%]"
+            />
+            {/* <div className="w-[70%] md:w-[30%]">
               <Lottie animationData={code} loop={true} />
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

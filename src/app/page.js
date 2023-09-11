@@ -116,7 +116,7 @@ export default function Home() {
       container: code.current,
       renderer: "svg",
       loop: true,
-      autoplay: false,
+      autoplay: true,
       animationData: require("../../public/gradient_code.json")
     });
 

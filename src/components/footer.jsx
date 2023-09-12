@@ -11,7 +11,7 @@ export default function Footer() {
 
     return (
       <footer id="contact" className="flex flex-col items-center px-2 md:px-0 md:flex-row md:items-start md:justify-start space-y-2 defaultBg">
-        <div className="w-1/4 flex flex-col justify-center items-start">
+        <div className="md:w-1/4 flex flex-col justify-center md:items-start border border-red-600">
             <Link href="/" className="w-[254px] h-[170px] flex justify-center md:relative">
                 <Image src="/auto_mail_logo1.png" alt="logo" width={200} height={116} className="md:hidden"/>
                 <Image src="/auto_mail_logo1.png" alt="logo" width={200} height={116} className="hidden md:flex md:absolute"/>

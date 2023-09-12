@@ -131,15 +131,15 @@ export default function Home() {
         <div className="pl-5 pb-5 md:pl-[120px] md:pb-0">
           <h1 className="md:w-[619px] mt-8 md:mt-0 md:text-5xl text-4xl text-[#343E61]"><span className="opacity-75">Révolutionnez les opérations de</span> traitement de courrier <span className="opacity-75">grâce à l'</span>IA</h1>
           <div className="w-full flex justify-center">
-            <Link href='#contact' className=" flex justify-center items-center w-[191px] h-[49px] border-[3px] border-[#343E61] text-[#343E61] bg-primary bg-opacity-40 mt-[30px] font-semibold rounded-2xl hover:bg-opacity-80 hover:bg-[#343E61] hover:text-white">Contactez-nous</Link>
+            <Link href='#contact' className=" flex justify-center items-center w-[191px] h-[49px] border-[3px] border-[#343E61] text-[#343E61] bg-primary bg-opacity-40 mt-[30px] font-semibold rounded-2xl hover:bg-opacity-80 hover:bg-[#343E61] hover:text-[#fff]">Contactez-nous</Link>
           </div>        
         </div>
         <div className="w-[599px] h-[342px] md:w-[699px] md:h-[442px] relative">
           <Image src="/dashboard_alt.png" alt="auto mail dashboard screen" fill className="absolute" />
         </div>
       </section>
-      <section className="w-screen bg-[#ffa498]">
-        <h2 className="flex justify-center text-3xl text-white text-center md:text-[34px] my-10 md:my-20">Outils de gestion des courriers en temps réel</h2>
+      <section className="w-screen bg-[#ffffff]">
+        <h2 className="flex justify-center text-3xl text-[#8b8b8b] text-center md:text-[34px] my-10 md:my-20">Outils de gestion des courriers en temps réel</h2>
         <div className="w-full md:flex">
           <div className="md:w-[50%]">
             <div className="w-[662px] h-[340px] md:w-[730px] md:h-[440px]  relative">
@@ -200,13 +200,13 @@ export default function Home() {
               </Card>                            
             </div>  
             <div className="w-full flex justify-center pb-10">
-              <Link href='/services' className=" flex justify-center items-center w-[324px] h-[49px] border-[3px] border-[#FFF] text-[#FFF] bg-primary bg-opacity-40 mb-[30px] font-semibold rounded-2xl hover:bg-opacity-80 hover:bg-[#FFF] hover:text-[#ffa498]">Voir toutes les fonctionnalités</Link>
+              <Link href='/services' className=" flex justify-center items-center w-[324px] h-[49px] border-[3px] border-[#ffa498] text-[#ffa498] bg-primary bg-opacity-40 mb-[30px] font-semibold rounded-2xl hover:bg-opacity-80 hover:bg-[#ffa498] hover:text-[#fff]">Voir toutes les fonctionnalités</Link>
             </div>         
           </div>
         </div>
       </section>
-      <section className="w-screen py-10 md:py-20 md:flex md:flex-col items-start bg-black">
-        <h2 className="md:px-20 md:pb-5 md:flex md:justify-center text-white text-3xl text-center md:text-[34px]">Travailler plus intélligemment</h2>
+      <section className="w-screen py-10 md:py-20 md:flex md:flex-col items-start bg-white">
+        <h2 className="md:px-20 md:pb-5 md:flex md:justify-center text-[#8b8b8b] text-3xl text-center md:text-[34px]">Travailler plus intélligemment</h2>
         <div className="w-screen px-6 flex flex-row flex-wrap items-start md:flex-row justify-center">
           <div className="w-1/2 md:w-1/4 flex flex-col items-start ">
             <div className="flex flex-col items-center mt-5 mb-2">              
@@ -216,7 +216,7 @@ export default function Home() {
                 onMouseLeave={() => webLottie.pause("efficiency")}
                 className="w-[128px] h-[128px]"
               />
-              <h3 className="text-white text-3xl font-normal">Efficacité</h3>
+              <h3 className="text-[#343E61] text-3xl font-normal">Efficacité</h3>
             </div>
             <p className="w-[95%] text-[#767676] text-lg">Automatisation des opérations de tâches manuelles dans la salle des courriers</p>
           </div>
@@ -228,7 +228,7 @@ export default function Home() {
                   onMouseLeave={() => webLottie.pause("precision")}
                   className="w-[128px] h-[128px]"
                 />
-              <h3 className="text-white text-3xl font-normal">Précision</h3>
+              <h3 className=" text-[#343E61] text-3xl font-normal">Précision</h3>
             </div>
             <p className="w-[97%] text-[#767676] text-lg">Génération automatisée de vos reponses grâce à l’IA</p>
           </div>
@@ -240,7 +240,7 @@ export default function Home() {
                   onMouseLeave={() => webLottie.pause("tracking")}
                   className="w-[128px] h-[128px]"
                 />
-                <h3 className="text-white text-3xl font-normal">Traçabilité</h3>
+                <h3 className=" text-[#343E61] text-3xl font-normal">Traçabilité</h3>
             </div>
             <p className="w-[97%] text-[#767676] text-lg">Chaques éléments de vos courriers sont comptabilisés</p>
           </div>
@@ -252,7 +252,7 @@ export default function Home() {
                   onMouseLeave={() => webLottie.pause("shield")}
                   className="w-[128px] h-[128px]"
                 />
-                <h3 className="text-white text-3xl font-normal">Sécurité</h3>
+                <h3 className=" text-[#343E61] text-3xl font-normal">Sécurité</h3>
             </div>
             <p className="w-[97%] text-[#767676] text-lg">Garantie de confidentialité et d’intégrité des données sensibles</p>
           </div>
@@ -260,14 +260,14 @@ export default function Home() {
         <div className="w-screen px-6 mt-14 flex justify-center">
           <div className="border border-[#4F4F4F] w-[1305px] h-[650px] md:h-[597px] rounded-[40px] mb-10 flex flex-col-reverse items-center md:flex-row md:items-center">
             <div className="w-full md:w-[70%]">
-              <h2 className="px-14 pb-5 flex justify-start text-white text-3xl text-center font-medium md:text-[34px]">
+              <h2 className="px-14 pb-5 flex justify-start  text-[#343E61] text-3xl text-center font-medium md:text-[34px]">
                 Un environnement de travail allégé
               </h2>
               <p className="text-[#767676] text-lg pl-14 pb-5 ">
                 Grâce à l’intégration du code QR, Automail vous permet d’acceder aux données de tous vos courriers peu importe où vous vous trouvez.
               </p>
               <div className="w-full flex justify-center pb-10 md:justify-start md:px-20">
-                <Link href='/solutions' className=" flex justify-center items-center w-[191px] h-[49px] border-[3px] border-[#FFF] text-[#FFF] bg-primary bg-opacity-40 mt-[30px] font-semibold rounded-2xl hover:bg-opacity-80 hover:bg-[#FFF] hover:text-black">En savoir plus</Link>
+                <Link href='/solutions' className=" flex justify-center items-center w-[191px] h-[49px] border-[3px] border-[#343E61] text-[#343E61] bg-primary bg-opacity-40 mt-[30px] font-semibold rounded-2xl hover:bg-opacity-80 hover:bg-[#343E61] hover:text-white">En savoir plus</Link>
               </div>
             </div>
             <div

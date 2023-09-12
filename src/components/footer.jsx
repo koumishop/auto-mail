@@ -10,18 +10,18 @@ export default function Footer() {
     const [state, handleSubmit] = useForm("mrgvjnog");
 
     return (
-      <footer id="contact" className="flex flex-col items-center px-2 md:px-0 md:flex-row md:items-start md:justify-center space-y-2 pt-16  defaultBg">
-        <div className="w-1/4 flex flex-col items-center">
+      <footer id="contact" className="flex flex-col items-center px-2 md:px-0 md:flex-row md:items-start md:justify-start space-y-2 defaultBg">
+        <div className="w-1/4 flex flex-col justify-center items-start">
             <Link href="/" className="w-[254px] h-[170px] flex justify-center md:relative">
-                <Image src="/auto_mail_logo_alt.png" alt="logo" width={254} height={170} className="md:hidden"/>
-                <Image src="/auto_mail_logo_alt.png" alt="logo" width={254} height={170} className="hidden md:flex md:absolute"/>
+                <Image src="/auto_mail_logo1.png" alt="logo" width={254} height={170} className="md:hidden"/>
+                <Image src="/auto_mail_logo1.png" alt="logo" width={254} height={170} className="hidden md:flex md:absolute"/>
             </Link>
-            <h2 className="w-[370px] text-[#343E61] font-semibold text-[34px] md:mt-16">Revolutionnez votre salle de courriers.</h2>   
         </div>
 
         <form onSubmit={handleSubmit} 
         id="meetForm" 
-        className="flex flex-col items-center py-6 md:py-0">
+        className="flex flex-col items-center py-6 md:pt-16 md:pr-20 md:pb-6 md:py-0">
+            <h2 className="text-[#343E61] font-semibold text-[34px] md:mt-16">Revolutionnez votre salle de courriers.</h2>   
             <h3 className="pb-2 font-normal text-[#455A64]">Remplissez ce formulaire pour prendre rendez-vous</h3>
             <div className="w-full space-y-4 flex flex-col items-center">
                 <span className="w-[95%] border-b-2 border-[#455A64] bg-transparent py-2 flex space-x-3">

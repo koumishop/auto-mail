@@ -218,7 +218,7 @@ export default function Home() {
               />
               <h3 className="text-[#343E61] text-3xl font-normal">Efficacité</h3>
             </div>
-            <p className="w-[95%] text-[#767676] text-lg">Automatisation des opérations de tâches manuelles dans la salle des courriers</p>
+            <p className="w-[95%] text-[#767676] text-lg">Automatisation des opérations de tâches manuelles dans la salle des courriers.</p>
           </div>
           <div className="w-1/2 md:w-1/4 flex flex-col items-start ">
             <div className="flex flex-col items-center mt-5 mb-2">
@@ -230,7 +230,7 @@ export default function Home() {
                 />
               <h3 className=" text-[#343E61] text-3xl font-normal">Précision</h3>
             </div>
-            <p className="w-[97%] text-[#767676] text-lg">Génération automatisée de vos reponses grâce à l’IA</p>
+            <p className="w-[97%] text-[#767676] text-lg">Génération automatisée de vos reponses grâce à l’IA.</p>
           </div>
           <div className="w-1/2 md:w-1/4 flex flex-col items-start ">
             <div className="flex flex-col items-center mt-5 mb-2">
@@ -242,7 +242,7 @@ export default function Home() {
                 />
                 <h3 className=" text-[#343E61] text-3xl font-normal">Traçabilité</h3>
             </div>
-            <p className="w-[97%] text-[#767676] text-lg">Chaques éléments de vos courriers sont comptabilisés</p>
+            <p className="w-[97%] text-[#767676] text-lg">Chaques éléments de vos courriers sont comptabilisés.</p>
           </div>
           <div className="w-1/2 md:w-1/4 flex flex-col items-start ">
             <div className="flex flex-col items-center mt-5 mb-2">
@@ -254,7 +254,7 @@ export default function Home() {
                 />
                 <h3 className=" text-[#343E61] text-3xl font-normal">Sécurité</h3>
             </div>
-            <p className="w-[97%] text-[#767676] text-lg">Garantie de confidentialité et d’intégrité des données sensibles</p>
+            <p className="w-[97%] text-[#767676] text-lg">Garantie de confidentialité et d’intégrité des données sensibles.</p>
           </div>
         </div>
         <div className="w-screen px-6 mt-14 flex justify-center">
